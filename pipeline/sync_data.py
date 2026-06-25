@@ -2,7 +2,7 @@
 """
 sync_data.py — 빌드 산출물(점수표)을 백엔드 데이터로 동기화.
 
-build_scores.py 가 루트에 functions.json / scores.json 을 갱신하면, 서버가 읽는
+build_scores.py 가 pipeline/ 에 functions.json / scores.json 을 갱신하면, 서버가 읽는
 backend/data/ 로 복사한다. (data.js 는 A안에서 더 이상 쓰지 않으므로 복사하지 않는다.)
 
   py -3.13 build_scores.py   # 점수표 갱신 (scores.json / data.js 생성)
@@ -14,7 +14,7 @@ import os
 import shutil
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DST = os.path.join(HERE, "backend", "data")
+DST = os.path.join(HERE, "..", "backend", "data")
 
 FILES = ["functions.json", "scores.json"]
 

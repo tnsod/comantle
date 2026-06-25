@@ -12,7 +12,7 @@ build_scores.py
      - 정답 자신의 유사도(=1.0)를 상한(hi)으로 삼는다. 따라서 100점은 '정답'에만 부여되고,
        정답과 아무리 비슷한 비정답이라도 100 미만이 된다.  (결함 A 방지)
      - 하한(lo)은 그 정답과 가장 먼 함수의 유사도.
-  4) scores.json / data.js 에 캐시한다. (런타임은 임베딩 호출 없이 룩업만)
+  4) scores.json 에 캐시한다. (런타임은 임베딩 호출 없이 룩업만)
 
 실행:
   py -3.13 build_scores.py
@@ -26,7 +26,6 @@ import numpy as np
 HERE = os.path.dirname(os.path.abspath(__file__))
 FUNCTIONS_PATH = os.path.join(HERE, "functions.json")
 SCORES_PATH = os.path.join(HERE, "scores.json")
-DATA_JS_PATH = os.path.join(HERE, "data.js")
 MODEL_NAME = "paraphrase-multilingual-MiniLM-L12-v2"
 
 ANCHOR_ANSWER = "cpp.vector.push_back"  # 회귀 방지용 스폿 체크 정답
@@ -215,18 +214,6 @@ def main():
     with open(SCORES_PATH, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False)
     print(f"[build] scores.json 생성 완료 ({len(funcs)}x{len(funcs)})")
-
-    # file:// 로 index.html 을 직접 열어도 동작하도록 data.js 도 함께 생성
-    # (브라우저는 file:// 에서 fetch(JSON) 을 막지만 <script src> 는 허용한다.)
-    with open(DATA_JS_PATH, "w", encoding="utf-8") as f:
-        f.write("// 자동 생성 파일 — build_scores.py 가 생성. 직접 수정하지 마세요.\n")
-        f.write("window.COMANTLE_FUNCTIONS = ")
-        json.dump(funcs, f, ensure_ascii=False)
-        f.write(";\n")
-        f.write("window.COMANTLE_SCORES = ")
-        json.dump(scores, f, ensure_ascii=False)
-        f.write(";\n")
-    print("[build] data.js 생성 완료 (오프라인 file:// 실행용)")
 
     ok = verify(funcs, vecs, scores)
     raise SystemExit(0 if ok else 1)

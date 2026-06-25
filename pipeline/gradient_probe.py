@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 """앵커 정답의 상위권 경사 수치 기록 (배치 간 회귀 비교용). ASCII 출력만."""
-import json, sys
+import json, os, sys
 
-scores = json.load(open("scores.json", encoding="utf-8"))["scores"]
-funcs = json.load(open("functions.json", encoding="utf-8"))
+HERE = os.path.dirname(os.path.abspath(__file__))
+scores = json.load(open(os.path.join(HERE, "scores.json"), encoding="utf-8"))["scores"]
+funcs = json.load(open(os.path.join(HERE, "functions.json"), encoding="utf-8"))
 byid = {f["id"]: f for f in funcs}
 
 anchors = sys.argv[1:] or [
