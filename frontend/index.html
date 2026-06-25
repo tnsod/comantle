@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>코맨틀 — 함수 의미 추측 게임</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="site-head">
+      <div class="brand">
+        <span class="logo-dot" aria-hidden="true"></span>
+        <h1>코맨틀</h1>
+      </div>
+      <p class="subtitle">오늘의 정답 함수와 <b>기능적으로</b> 얼마나 가까운지 좁혀보세요. <span class="langs">C++ · Python · Java</span></p>
+    </header>
+
+    <section class="controls">
+      <div class="search">
+        <span class="search-icon" aria-hidden="true"></span>
+        <input
+          id="guessInput"
+          type="text"
+          autocomplete="off"
+          placeholder="함수 이름을 입력하세요"
+          aria-label="함수 이름 입력"
+        />
+        <button id="enterKey" class="enter-key" type="button" aria-label="입력">Enter ↵</button>
+        <ul id="suggestions" class="suggestions hidden"></ul>
+      </div>
+      <section class="hints">
+        <button id="hintBtn" class="icon-btn" type="button" aria-label="힌트 보기" title="힌트">💡</button>
+        <button id="giveUpBtn" class="icon-btn" type="button" aria-label="포기" title="포기">🚩</button>
+        <button id="newGameBtn" class="hint-btn ghost" type="button">새 게임 ↻</button>
+      </section>
+      <div id="message" class="message" role="status"></div>
+    </section>
+
+    <div id="hintBox" class="hint-box hidden"></div>
+
+    <!-- 정답 공개 영역: 정답을 맞혔거나 포기했을 때 노출 -->
+    <section id="winBox" class="win-box hidden"></section>
+
+    <section class="results">
+      <div class="results-head">
+        <span class="results-title">추측 기록</span>
+        <span id="attemptCount" class="attempt-count">시도 0회</span>
+      </div>
+      <div id="attemptTable" class="attempt-table"></div>
+      <div class="empty-hint">함수 이름을 입력하면 정답과의 <b>유사도</b>가 게이지로 나타나요.</div>
+    </section>
+
+    <footer>
+      <p class="note">등록된 함수만 추측할 수 있어요. 이름을 입력하고 Enter를 누르세요. 같은 이름이 여러 개면 후보에서 고르면 됩니다.</p>
+    </footer>
+  </main>
+
+  <!-- 확인용 중앙 모달 (힌트 / 포기 공용) -->
+  <div id="modal" class="modal-overlay hidden">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalText">
+      <p id="modalText" class="modal-text"></p>
+      <div class="modal-actions">
+        <button id="modalYes" class="modal-btn yes" type="button">네</button>
+        <button id="modalNo" class="modal-btn no" type="button">아니오</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- A안: 점수·정답은 서버가 쥔다. data.js 제거. 점수표를 클라에 내려보내지 않는다. -->
+  <!-- 백엔드 주소. 같은 출처로 서빙하면 ""(빈 문자열)로 두면 된다. -->
+  <script>window.COMANTLE_API_BASE = "http://127.0.0.1:8000";</script>
+  <script src="app.js"></script>
+</body>
+</html>

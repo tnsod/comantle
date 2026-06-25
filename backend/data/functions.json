@@ -1,0 +1,3481 @@
+[
+  {
+    "id": "cpp.vector.push_back",
+    "displayName": "std::vector::push_back",
+    "language": "C++",
+    "library": "STL vector",
+    "aliases": ["push_back", "vector.push_back", "std::vector::push_back"],
+    "tags": ["container", "list", "add"],
+    "description": "리스트의 맨 끝에 원소 하나를 새로 추가한다."
+  },
+  {
+    "id": "cpp.vector.emplace_back",
+    "displayName": "std::vector::emplace_back",
+    "language": "C++",
+    "library": "STL vector",
+    "aliases": ["emplace_back", "vector.emplace_back", "std::vector::emplace_back"],
+    "tags": ["container", "list", "add"],
+    "description": "리스트의 맨 끝에 새 원소를 그 자리에서 만들어 붙인다."
+  },
+  {
+    "id": "cpp.vector.insert",
+    "displayName": "std::vector::insert",
+    "language": "C++",
+    "library": "STL vector",
+    "aliases": ["insert", "vector.insert", "std::vector::insert"],
+    "tags": ["container", "list", "add"],
+    "description": "리스트의 지정한 위치에 원소를 끼워 넣고 뒤 원소들을 한 칸씩 민다."
+  },
+  {
+    "id": "cpp.vector.pop_back",
+    "displayName": "std::vector::pop_back",
+    "language": "C++",
+    "library": "STL vector",
+    "aliases": ["pop_back", "vector.pop_back", "std::vector::pop_back"],
+    "tags": ["container", "list", "remove"],
+    "description": "리스트의 가장 뒤에 있는 원소 하나를 떼어내 삭제한다."
+  },
+  {
+    "id": "cpp.vector.size",
+    "displayName": "std::vector::size",
+    "language": "C++",
+    "library": "STL vector",
+    "aliases": ["size", "vector.size", "std::vector::size"],
+    "tags": ["container", "query"],
+    "description": "리스트에 담긴 원소가 몇 개인지 그 개수를 돌려준다."
+  },
+  {
+    "id": "cpp.vector.clear",
+    "displayName": "std::vector::clear",
+    "language": "C++",
+    "library": "STL vector",
+    "aliases": ["clear", "vector.clear", "std::vector::clear"],
+    "tags": ["container", "remove"],
+    "description": "리스트에 담긴 원소를 모두 지워 빈 상태로 만든다."
+  },
+  {
+    "id": "cpp.algorithm.reverse",
+    "displayName": "std::reverse",
+    "language": "C++",
+    "library": "STL algorithm",
+    "aliases": ["reverse", "std::reverse"],
+    "tags": ["algorithm", "order"],
+    "description": "리스트에 나열된 원소들의 앞뒤 순서를 통째로 뒤집는다."
+  },
+  {
+    "id": "cpp.algorithm.sort",
+    "displayName": "std::sort",
+    "language": "C++",
+    "library": "STL algorithm",
+    "aliases": ["sort", "std::sort"],
+    "tags": ["algorithm", "order"],
+    "description": "여러 값을 작은 것부터 큰 것까지 크기 순으로 가지런히 늘어놓는다."
+  },
+  {
+    "id": "cpp.algorithm.find",
+    "displayName": "std::find",
+    "language": "C++",
+    "library": "STL algorithm",
+    "aliases": ["find", "std::find"],
+    "tags": ["algorithm", "search"],
+    "description": "리스트의 원소들을 훑어 찾는 값이 처음 등장하는 자리를 가리킨다."
+  },
+  {
+    "id": "cpp.algorithm.max",
+    "displayName": "std::max",
+    "language": "C++",
+    "library": "STL algorithm",
+    "aliases": ["max", "std::max"],
+    "tags": ["math", "compare"],
+    "description": "두 값을 견주어 더 큰 쪽을 골라 돌려준다."
+  },
+  {
+    "id": "cpp.algorithm.min",
+    "displayName": "std::min",
+    "language": "C++",
+    "library": "STL algorithm",
+    "aliases": ["min", "std::min"],
+    "tags": ["math", "compare"],
+    "description": "두 값을 견주어 더 작은 쪽을 골라 돌려준다."
+  },
+  {
+    "id": "cpp.cmath.abs",
+    "displayName": "std::abs",
+    "language": "C++",
+    "library": "cmath",
+    "aliases": ["abs", "std::abs"],
+    "tags": ["math"],
+    "description": "어떤 수에서 음수 부호를 떼어 낸 절댓값을 구한다."
+  },
+  {
+    "id": "cpp.cmath.sqrt",
+    "displayName": "std::sqrt",
+    "language": "C++",
+    "library": "cmath",
+    "aliases": ["sqrt", "std::sqrt"],
+    "tags": ["math"],
+    "description": "어떤 수의 제곱근 값을 계산한다."
+  },
+  {
+    "id": "cpp.cmath.pow",
+    "displayName": "std::pow",
+    "language": "C++",
+    "library": "cmath",
+    "aliases": ["pow", "std::pow"],
+    "tags": ["math"],
+    "description": "밑이 되는 수를 지수만큼 거듭제곱한 값을 계산한다."
+  },
+  {
+    "id": "cpp.string.substr",
+    "displayName": "std::string::substr",
+    "language": "C++",
+    "library": "STL string",
+    "aliases": ["substr", "string.substr", "std::string::substr"],
+    "tags": ["string"],
+    "description": "문자열에서 지정한 구간을 잘라내 새 문자열로 돌려준다."
+  },
+  {
+    "id": "cpp.string.replace",
+    "displayName": "std::string::replace",
+    "language": "C++",
+    "library": "STL string",
+    "aliases": ["replace", "string.replace", "std::string::replace"],
+    "tags": ["string"],
+    "description": "문자열의 특정 구간을 다른 문자열로 교체한다."
+  },
+  {
+    "id": "cpp.string.find",
+    "displayName": "std::string::find",
+    "language": "C++",
+    "library": "STL string",
+    "aliases": ["find", "string.find", "std::string::find"],
+    "tags": ["string", "search"],
+    "description": "문자열 속에서 특정 부분 문자열이 처음 나오는 위치를 찾는다."
+  },
+  {
+    "id": "cpp.string.length",
+    "displayName": "std::string::length",
+    "language": "C++",
+    "library": "STL string",
+    "aliases": ["length", "string.length", "std::string::length"],
+    "tags": ["string", "query"],
+    "description": "문자열을 이루는 글자가 몇 개인지 그 길이를 알려준다."
+  },
+  {
+    "id": "cpp.map.insert",
+    "displayName": "std::map::insert",
+    "language": "C++",
+    "library": "STL map",
+    "aliases": ["insert", "map.insert", "std::map::insert"],
+    "tags": ["container", "map", "add"],
+    "description": "사전에 키와 값의 짝을, 같은 키가 없을 때에만 새로 집어넣는다."
+  },
+  {
+    "id": "cpp.map.count",
+    "displayName": "std::map::count",
+    "language": "C++",
+    "library": "STL map",
+    "aliases": ["count", "map.count", "std::map::count"],
+    "tags": ["container", "map", "search"],
+    "description": "사전에 특정 키가 들어 있는지 그 개수를 세어 확인한다."
+  },
+  {
+    "id": "cpp.map.at",
+    "displayName": "std::map::at",
+    "language": "C++",
+    "library": "STL map",
+    "aliases": ["at", "map.at", "std::map::at"],
+    "tags": ["container", "map", "query"],
+    "description": "사전에서 주어진 키에 대응하는 값을 찾아 돌려준다."
+  },
+  {
+    "id": "cpp.iostream.cout",
+    "displayName": "std::cout",
+    "language": "C++",
+    "library": "iostream",
+    "aliases": ["cout", "std::cout"],
+    "tags": ["io", "output"],
+    "description": "값을 표준 출력으로 내보내 화면에 나타낸다."
+  },
+  {
+    "id": "cpp.iostream.cin",
+    "displayName": "std::cin",
+    "language": "C++",
+    "library": "iostream",
+    "aliases": ["cin", "std::cin"],
+    "tags": ["io", "input"],
+    "description": "표준 입력에서 공백으로 구분된 값을 읽어 변수에 담는다."
+  },
+  {
+    "id": "cpp.string.stoi",
+    "displayName": "std::stoi",
+    "language": "C++",
+    "library": "STL string",
+    "aliases": ["stoi", "std::stoi"],
+    "tags": ["convert", "number"],
+    "description": "숫자가 적힌 문자열을 해석해 정수 값으로 변환한다."
+  },
+  {
+    "id": "cpp.string.to_string",
+    "displayName": "std::to_string",
+    "language": "C++",
+    "library": "STL string",
+    "aliases": ["to_string", "std::to_string"],
+    "tags": ["convert", "string"],
+    "description": "숫자 값을 사람이 읽는 문자열 형태로 바꾼다."
+  },
+
+  {
+    "id": "python.list.append",
+    "displayName": "list.append",
+    "language": "Python",
+    "library": "list",
+    "aliases": ["append", "list.append"],
+    "tags": ["container", "list", "add"],
+    "description": "리스트의 맨 끝에 항목 하나를 덧붙인다."
+  },
+  {
+    "id": "python.list.insert",
+    "displayName": "list.insert",
+    "language": "Python",
+    "library": "list",
+    "aliases": ["insert", "list.insert"],
+    "tags": ["container", "list", "add"],
+    "description": "리스트의 특정 인덱스 자리에 항목 하나를 삽입한다."
+  },
+  {
+    "id": "python.list.pop",
+    "displayName": "list.pop",
+    "language": "Python",
+    "library": "list",
+    "aliases": ["pop", "list.pop"],
+    "tags": ["container", "list", "remove"],
+    "description": "리스트의 지정한 위치에서 항목을 꺼내 없애고 그 값을 돌려준다."
+  },
+  {
+    "id": "python.list.remove",
+    "displayName": "list.remove",
+    "language": "Python",
+    "library": "list",
+    "aliases": ["remove", "list.remove"],
+    "tags": ["container", "list", "remove"],
+    "description": "리스트에서 특정 값과 같은 첫 항목을 찾아 지운다."
+  },
+  {
+    "id": "python.builtin.len",
+    "displayName": "len",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["len"],
+    "tags": ["container", "query"],
+    "description": "리스트나 문자열에 들어 있는 항목의 총 개수를 알려준다."
+  },
+  {
+    "id": "python.list.clear",
+    "displayName": "list.clear",
+    "language": "Python",
+    "library": "list",
+    "aliases": ["clear", "list.clear"],
+    "tags": ["container", "remove"],
+    "description": "리스트의 항목을 전부 비워 빈 리스트로 만든다."
+  },
+  {
+    "id": "python.list.reverse",
+    "displayName": "list.reverse",
+    "language": "Python",
+    "library": "list",
+    "aliases": ["reverse", "list.reverse"],
+    "tags": ["container", "order"],
+    "description": "리스트에 담긴 항목들의 순서를 거꾸로 바꾼다."
+  },
+  {
+    "id": "python.list.sort",
+    "displayName": "list.sort",
+    "language": "Python",
+    "library": "list",
+    "aliases": ["sort", "list.sort"],
+    "tags": ["container", "order"],
+    "description": "데이터를 크기 기준 오름차순으로 차례차례 정렬한다."
+  },
+  {
+    "id": "python.builtin.sorted",
+    "displayName": "sorted",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["sorted"],
+    "tags": ["order"],
+    "description": "여러 값을 크기 순으로 정렬한 새 목록을 만들어 돌려준다."
+  },
+  {
+    "id": "python.list.index",
+    "displayName": "list.index",
+    "language": "Python",
+    "library": "list",
+    "aliases": ["index", "list.index"],
+    "tags": ["container", "search"],
+    "description": "리스트에서 특정 값이 처음 나오는 위치 번호를 찾아 준다."
+  },
+  {
+    "id": "python.builtin.max",
+    "displayName": "max",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["max"],
+    "tags": ["math", "compare"],
+    "description": "여러 값 가운데 가장 큰 값을 찾아 준다."
+  },
+  {
+    "id": "python.builtin.min",
+    "displayName": "min",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["min"],
+    "tags": ["math", "compare"],
+    "description": "여러 값 가운데 가장 작은 값을 찾아 준다."
+  },
+  {
+    "id": "python.builtin.abs",
+    "displayName": "abs",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["abs"],
+    "tags": ["math"],
+    "description": "수의 부호를 무시한 절댓값을 돌려준다."
+  },
+  {
+    "id": "python.math.sqrt",
+    "displayName": "math.sqrt",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["sqrt", "math.sqrt"],
+    "tags": ["math"],
+    "description": "주어진 수의 제곱근을 구해 돌려준다."
+  },
+  {
+    "id": "python.builtin.pow",
+    "displayName": "pow",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["pow"],
+    "tags": ["math"],
+    "description": "어떤 수를 주어진 횟수만큼 거듭제곱한 결과를 돌려준다."
+  },
+  {
+    "id": "python.str.replace",
+    "displayName": "str.replace",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["replace", "str.replace"],
+    "tags": ["string"],
+    "description": "문자열에서 찾은 부분을 모두 다른 내용으로 바꾼 새 문자열을 만든다."
+  },
+  {
+    "id": "python.str.find",
+    "displayName": "str.find",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["find", "str.find"],
+    "tags": ["string", "search"],
+    "description": "문자열에서 찾는 작은 문자열이 처음 등장하는 자리를 알려준다."
+  },
+  {
+    "id": "python.str.split",
+    "displayName": "str.split",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["split", "str.split"],
+    "tags": ["string"],
+    "description": "문자열을 특정 구분자 기준으로 잘라 여러 조각의 목록으로 만든다."
+  },
+  {
+    "id": "python.str.join",
+    "displayName": "str.join",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["join", "str.join"],
+    "tags": ["string"],
+    "description": "여러 문자열 조각 사이에 구분자를 끼워 하나로 이어 붙인다."
+  },
+  {
+    "id": "python.str.upper",
+    "displayName": "str.upper",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["upper", "str.upper"],
+    "tags": ["string"],
+    "description": "문자열의 모든 소문자를 대문자로 바꾼 새 문자열을 만든다."
+  },
+  {
+    "id": "python.dict.get",
+    "displayName": "dict.get",
+    "language": "Python",
+    "library": "dict",
+    "aliases": ["get", "dict.get"],
+    "tags": ["container", "map", "query"],
+    "description": "사전에서 키에 해당하는 값을 꺼내 오되 없으면 기본값을 돌려준다."
+  },
+  {
+    "id": "python.builtin.print",
+    "displayName": "print",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["print"],
+    "tags": ["io", "output"],
+    "description": "값을 화면에 표시하고 줄을 바꾼다."
+  },
+  {
+    "id": "python.builtin.input",
+    "displayName": "input",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["input"],
+    "tags": ["io", "input"],
+    "description": "사용자가 입력한 한 줄을 문자열로 받아온다."
+  },
+  {
+    "id": "python.builtin.int",
+    "displayName": "int",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["int"],
+    "tags": ["convert", "number"],
+    "description": "문자열이나 실수를 정수로 바꿔 준다."
+  },
+  {
+    "id": "python.builtin.str",
+    "displayName": "str",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["str"],
+    "tags": ["convert", "string"],
+    "description": "주어진 값을 문자열 형태로 변환해 돌려준다."
+  },
+
+  {
+    "id": "java.arraylist.add",
+    "displayName": "ArrayList.add",
+    "language": "Java",
+    "library": "java.util ArrayList",
+    "aliases": ["add", "ArrayList.add", "list.add"],
+    "tags": ["container", "list", "add"],
+    "description": "리스트의 맨 끝에 요소 하나를 더해 넣는다."
+  },
+  {
+    "id": "java.arraylist.addIndex",
+    "displayName": "ArrayList.add(index, e)",
+    "language": "Java",
+    "library": "java.util ArrayList",
+    "aliases": ["add", "ArrayList.add(index)", "list.add(index)"],
+    "tags": ["container", "list", "add"],
+    "description": "리스트의 지정한 인덱스에 요소를 끼워 넣어 뒤를 한 칸씩 민다."
+  },
+  {
+    "id": "java.arraylist.remove",
+    "displayName": "ArrayList.remove",
+    "language": "Java",
+    "library": "java.util ArrayList",
+    "aliases": ["remove", "ArrayList.remove", "list.remove"],
+    "tags": ["container", "list", "remove"],
+    "description": "리스트에서 지정한 위치나 값에 해당하는 요소를 없앤다."
+  },
+  {
+    "id": "java.arraylist.size",
+    "displayName": "ArrayList.size",
+    "language": "Java",
+    "library": "java.util ArrayList",
+    "aliases": ["size", "ArrayList.size", "list.size"],
+    "tags": ["container", "query"],
+    "description": "리스트에 담긴 요소의 수를 반환한다."
+  },
+  {
+    "id": "java.arraylist.clear",
+    "displayName": "ArrayList.clear",
+    "language": "Java",
+    "library": "java.util ArrayList",
+    "aliases": ["clear", "ArrayList.clear", "list.clear"],
+    "tags": ["container", "remove"],
+    "description": "리스트에 들어 있는 요소를 한꺼번에 모두 삭제한다."
+  },
+  {
+    "id": "java.collections.reverse",
+    "displayName": "Collections.reverse",
+    "language": "Java",
+    "library": "java.util Collections",
+    "aliases": ["reverse", "Collections.reverse"],
+    "tags": ["container", "order"],
+    "description": "리스트에 담긴 요소들의 순서를 반대로 돌린다."
+  },
+  {
+    "id": "java.collections.sort",
+    "displayName": "Collections.sort",
+    "language": "Java",
+    "library": "java.util Collections",
+    "aliases": ["sort", "Collections.sort"],
+    "tags": ["container", "order"],
+    "description": "담긴 값들을 크기 순서에 따라 작은 것이 앞에 오도록 줄 세운다."
+  },
+  {
+    "id": "java.arraylist.indexOf",
+    "displayName": "ArrayList.indexOf",
+    "language": "Java",
+    "library": "java.util ArrayList",
+    "aliases": ["indexOf", "ArrayList.indexOf", "list.indexOf"],
+    "tags": ["container", "search"],
+    "description": "리스트에서 주어진 값이 처음 나타나는 위치를 반환한다."
+  },
+  {
+    "id": "java.arraylist.get",
+    "displayName": "ArrayList.get",
+    "language": "Java",
+    "library": "java.util ArrayList",
+    "aliases": ["get", "ArrayList.get", "list.get"],
+    "tags": ["container", "query"],
+    "description": "리스트에서 지정한 위치 번호에 있는 요소를 꺼내 온다."
+  },
+  {
+    "id": "java.math.max",
+    "displayName": "Math.max",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["max", "Math.max"],
+    "tags": ["math", "compare"],
+    "description": "주어진 수들 중 더 큰 값을 골라 반환한다."
+  },
+  {
+    "id": "java.math.min",
+    "displayName": "Math.min",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["min", "Math.min"],
+    "tags": ["math", "compare"],
+    "description": "주어진 수들 중 더 작은 값을 골라 반환한다."
+  },
+  {
+    "id": "java.math.abs",
+    "displayName": "Math.abs",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["abs", "Math.abs"],
+    "tags": ["math"],
+    "description": "주어진 수의 절댓값, 즉 0에서 떨어진 거리를 반환한다."
+  },
+  {
+    "id": "java.math.sqrt",
+    "displayName": "Math.sqrt",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["sqrt", "Math.sqrt"],
+    "tags": ["math"],
+    "description": "수의 양의 제곱근을 계산해 반환한다."
+  },
+  {
+    "id": "java.math.pow",
+    "displayName": "Math.pow",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["pow", "Math.pow"],
+    "tags": ["math"],
+    "description": "밑을 지수만큼 거듭제곱한 값을 반환한다."
+  },
+  {
+    "id": "java.string.substring",
+    "displayName": "String.substring",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["substring", "String.substring"],
+    "tags": ["string"],
+    "description": "문자열의 시작과 끝 사이 부분을 잘라 반환한다."
+  },
+  {
+    "id": "java.string.replace",
+    "displayName": "String.replace",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["replace", "String.replace"],
+    "tags": ["string"],
+    "description": "문자열에 나타난 특정 문자나 부분을 다른 것으로 치환한다."
+  },
+  {
+    "id": "java.string.indexOf",
+    "displayName": "String.indexOf",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["indexOf", "String.indexOf"],
+    "tags": ["string", "search"],
+    "description": "문자열 안에서 지정한 부분 문자열이 처음 나타나는 위치를 돌려준다."
+  },
+  {
+    "id": "java.string.length",
+    "displayName": "String.length",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["length", "String.length"],
+    "tags": ["string", "query"],
+    "description": "문자열에 포함된 문자의 개수를 돌려준다."
+  },
+  {
+    "id": "java.string.split",
+    "displayName": "String.split",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["split", "String.split"],
+    "tags": ["string"],
+    "description": "문자열을 정해진 구분 기호로 나누어 여러 조각으로 만든다."
+  },
+  {
+    "id": "java.string.toUpperCase",
+    "displayName": "String.toUpperCase",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["toUpperCase", "String.toUpperCase"],
+    "tags": ["string"],
+    "description": "문자열에 든 글자를 전부 대문자로 변환해 반환한다."
+  },
+  {
+    "id": "java.hashmap.put",
+    "displayName": "HashMap.put",
+    "language": "Java",
+    "library": "java.util HashMap",
+    "aliases": ["put", "HashMap.put", "map.put"],
+    "tags": ["container", "map", "add"],
+    "description": "사전에 키와 값을 짝지어 저장하며 같은 키가 있으면 기존 값을 덮어쓴다."
+  },
+  {
+    "id": "java.hashmap.get",
+    "displayName": "HashMap.get",
+    "language": "Java",
+    "library": "java.util HashMap",
+    "aliases": ["get", "HashMap.get", "map.get"],
+    "tags": ["container", "map", "query"],
+    "description": "사전에서 키에 짝지어진 값을 찾아 반환한다."
+  },
+  {
+    "id": "java.hashmap.containsKey",
+    "displayName": "HashMap.containsKey",
+    "language": "Java",
+    "library": "java.util HashMap",
+    "aliases": ["containsKey", "HashMap.containsKey", "map.containsKey"],
+    "tags": ["container", "map", "search"],
+    "description": "사전에 주어진 키가 존재하는지 참 거짓으로 알려준다."
+  },
+  {
+    "id": "java.io.println",
+    "displayName": "System.out.println",
+    "language": "Java",
+    "library": "java.io PrintStream",
+    "aliases": ["println", "System.out.println", "print"],
+    "tags": ["io", "output"],
+    "description": "값을 화면에 출력한 뒤 다음 줄로 넘어간다."
+  },
+  {
+    "id": "java.lang.parseInt",
+    "displayName": "Integer.parseInt",
+    "language": "Java",
+    "library": "java.lang Integer",
+    "aliases": ["parseInt", "Integer.parseInt"],
+    "tags": ["convert", "number"],
+    "description": "숫자 형태의 문자열을 풀어 정수 값으로 변환한다."
+  },
+
+  {
+    "id": "cpp.stack.push",
+    "displayName": "std::stack::push",
+    "language": "C++",
+    "library": "STL stack",
+    "aliases": ["push", "stack.push", "std::stack::push"],
+    "tags": ["container", "stack", "add"],
+    "description": "맨 위에 원소 하나를 새로 쌓아 올린다."
+  },
+  {
+    "id": "cpp.queue.push",
+    "displayName": "std::queue::push",
+    "language": "C++",
+    "library": "STL queue",
+    "aliases": ["push", "queue.push", "std::queue::push"],
+    "tags": ["container", "queue", "add"],
+    "description": "줄의 맨 뒤에 원소 하나를 새로 집어넣는다."
+  },
+  {
+    "id": "cpp.pqueue.push",
+    "displayName": "std::priority_queue::push",
+    "language": "C++",
+    "library": "STL priority_queue",
+    "aliases": ["push", "priority_queue.push", "pq.push"],
+    "tags": ["container", "heap", "add"],
+    "description": "우선순위가 높은 것이 먼저 나오도록 알맞은 자리를 찾아 원소를 새로 넣는다."
+  },
+  {
+    "id": "python.heapq.heappush",
+    "displayName": "heapq.heappush",
+    "language": "Python",
+    "library": "heapq 모듈",
+    "aliases": ["heappush", "heapq.heappush"],
+    "tags": ["container", "heap", "add"],
+    "description": "가장 작은 값이 먼저 나오도록 정렬 상태를 지키며 원소 하나를 새로 넣는다."
+  },
+  {
+    "id": "java.stack.push",
+    "displayName": "Stack.push",
+    "language": "Java",
+    "library": "java.util Stack",
+    "aliases": ["push", "Stack.push"],
+    "tags": ["container", "stack", "add"],
+    "description": "가장 위쪽에 원소 하나를 얹어 새로 쌓는다."
+  },
+  {
+    "id": "java.queue.offer",
+    "displayName": "Queue.offer",
+    "language": "Java",
+    "library": "java.util Queue",
+    "aliases": ["offer", "Queue.offer"],
+    "tags": ["container", "queue", "add"],
+    "description": "줄의 맨 뒤 자리에 원소 하나를 새로 넣는다."
+  },
+  {
+    "id": "java.pqueue.offer",
+    "displayName": "PriorityQueue.offer",
+    "language": "Java",
+    "library": "java.util PriorityQueue",
+    "aliases": ["offer", "PriorityQueue.offer"],
+    "tags": ["container", "heap", "add"],
+    "description": "정해진 우선순위 순서가 유지되도록 적절한 위치에 원소를 새로 추가한다."
+  },
+  {
+    "id": "cpp.vector.erase",
+    "displayName": "std::vector::erase",
+    "language": "C++",
+    "library": "STL vector",
+    "aliases": ["erase", "vector.erase", "std::vector::erase"],
+    "tags": ["container", "list", "remove"],
+    "description": "리스트에서 지정한 위치의 원소를 빼내어 없애고 뒤 원소들을 한 칸씩 당긴다."
+  },
+  {
+    "id": "cpp.stack.pop",
+    "displayName": "std::stack::pop",
+    "language": "C++",
+    "library": "STL stack",
+    "aliases": ["pop", "stack.pop", "std::stack::pop"],
+    "tags": ["container", "stack", "remove"],
+    "description": "맨 위에 있는 원소 하나를 걷어내 제거한다."
+  },
+  {
+    "id": "cpp.queue.pop",
+    "displayName": "std::queue::pop",
+    "language": "C++",
+    "library": "STL queue",
+    "aliases": ["pop", "queue.pop", "std::queue::pop"],
+    "tags": ["container", "queue", "remove"],
+    "description": "줄의 맨 앞 원소 하나를 내보내 제거한다."
+  },
+  {
+    "id": "cpp.pqueue.pop",
+    "displayName": "std::priority_queue::pop",
+    "language": "C++",
+    "library": "STL priority_queue",
+    "aliases": ["pop", "priority_queue.pop", "pq.pop"],
+    "tags": ["container", "heap", "remove"],
+    "description": "우선순위가 가장 높은 원소를 꺼내 제거한다."
+  },
+  {
+    "id": "python.heapq.heappop",
+    "displayName": "heapq.heappop",
+    "language": "Python",
+    "library": "heapq 모듈",
+    "aliases": ["heappop", "heapq.heappop"],
+    "tags": ["container", "heap", "remove"],
+    "description": "가장 작은 값을 꺼내 제거하고 그 값을 돌려준다."
+  },
+  {
+    "id": "java.linkedlist.removeLast",
+    "displayName": "LinkedList.removeLast",
+    "language": "Java",
+    "library": "java.util LinkedList",
+    "aliases": ["removeLast", "LinkedList.removeLast"],
+    "tags": ["container", "list", "remove"],
+    "description": "맨 끝에 있는 원소 하나를 떼어내 제거한다."
+  },
+  {
+    "id": "java.stack.pop",
+    "displayName": "Stack.pop",
+    "language": "Java",
+    "library": "java.util Stack",
+    "aliases": ["pop", "Stack.pop"],
+    "tags": ["container", "stack", "remove"],
+    "description": "가장 위쪽 원소 하나를 걷어내 제거한다."
+  },
+  {
+    "id": "java.queue.poll",
+    "displayName": "Queue.poll",
+    "language": "Java",
+    "library": "java.util Queue",
+    "aliases": ["poll", "Queue.poll"],
+    "tags": ["container", "queue", "remove"],
+    "description": "줄의 맨 앞 원소 하나를 꺼내 제거한다."
+  },
+  {
+    "id": "java.pqueue.poll",
+    "displayName": "PriorityQueue.poll",
+    "language": "Java",
+    "library": "java.util PriorityQueue",
+    "aliases": ["poll", "PriorityQueue.poll"],
+    "tags": ["container", "heap", "remove"],
+    "description": "정해진 우선순위가 가장 앞선 원소를 꺼내 제거한다."
+  },
+  {
+    "id": "cpp.map.clear",
+    "displayName": "std::map::clear",
+    "language": "C++",
+    "library": "STL map",
+    "aliases": ["clear", "map.clear", "std::map::clear"],
+    "tags": ["container", "map", "remove"],
+    "description": "사전에 들어 있는 모든 키와 값 짝을 한꺼번에 지워 빈 상태로 만든다."
+  },
+  {
+    "id": "python.dict.clear",
+    "displayName": "dict.clear",
+    "language": "Python",
+    "library": "dict",
+    "aliases": ["clear", "dict.clear"],
+    "tags": ["container", "map", "remove"],
+    "description": "사전에 담긴 모든 키와 값 항목을 통째로 비운다."
+  },
+  {
+    "id": "java.hashmap.clear",
+    "displayName": "HashMap.clear",
+    "language": "Java",
+    "library": "java.util HashMap",
+    "aliases": ["clear", "HashMap.clear"],
+    "tags": ["container", "map", "remove"],
+    "description": "사전에 저장된 모든 키와 값 짝을 한 번에 삭제한다."
+  },
+  {
+    "id": "cpp.map.size",
+    "displayName": "std::map::size",
+    "language": "C++",
+    "library": "STL map",
+    "aliases": ["size", "map.size", "std::map::size"],
+    "tags": ["container", "map", "query"],
+    "description": "사전에 들어 있는 키와 값 짝이 몇 개인지 그 개수를 돌려준다."
+  },
+  {
+    "id": "java.hashmap.size",
+    "displayName": "HashMap.size",
+    "language": "Java",
+    "library": "java.util HashMap",
+    "aliases": ["size", "HashMap.size"],
+    "tags": ["container", "map", "query"],
+    "description": "사전에 저장된 키와 값 짝의 수를 반환한다."
+  },
+  {
+    "id": "cpp.vector.empty",
+    "displayName": "std::vector::empty",
+    "language": "C++",
+    "library": "STL vector",
+    "aliases": ["empty", "vector.empty", "std::vector::empty"],
+    "tags": ["container", "query"],
+    "description": "리스트에 원소가 하나도 없는 비어 있는 상태인지 알려준다."
+  },
+  {
+    "id": "java.collection.isEmpty",
+    "displayName": "Collection.isEmpty",
+    "language": "Java",
+    "library": "java.util Collection",
+    "aliases": ["isEmpty", "Collection.isEmpty"],
+    "tags": ["container", "query"],
+    "description": "리스트에 원소가 전혀 없는 빈 상태인지 참 거짓으로 알려준다."
+  },
+  {
+    "id": "cpp.vector.front",
+    "displayName": "std::vector::front",
+    "language": "C++",
+    "library": "STL vector",
+    "aliases": ["front", "vector.front", "std::vector::front"],
+    "tags": ["container", "query"],
+    "description": "리스트의 맨 앞에 있는 첫 원소를 꺼내 온다."
+  },
+  {
+    "id": "cpp.vector.back",
+    "displayName": "std::vector::back",
+    "language": "C++",
+    "library": "STL vector",
+    "aliases": ["back", "vector.back", "std::vector::back"],
+    "tags": ["container", "query"],
+    "description": "리스트의 맨 뒤에 있는 마지막 원소를 꺼내 온다."
+  },
+  {
+    "id": "java.linkedlist.getFirst",
+    "displayName": "LinkedList.getFirst",
+    "language": "Java",
+    "library": "java.util LinkedList",
+    "aliases": ["getFirst", "LinkedList.getFirst"],
+    "tags": ["container", "query"],
+    "description": "리스트의 가장 앞 첫 원소를 가져온다."
+  },
+  {
+    "id": "java.linkedlist.getLast",
+    "displayName": "LinkedList.getLast",
+    "language": "Java",
+    "library": "java.util LinkedList",
+    "aliases": ["getLast", "LinkedList.getLast"],
+    "tags": ["container", "query"],
+    "description": "리스트의 가장 뒤 마지막 원소를 가져온다."
+  },
+  {
+    "id": "cpp.vector.at",
+    "displayName": "std::vector::at",
+    "language": "C++",
+    "library": "STL vector",
+    "aliases": ["at", "vector.at", "std::vector::at"],
+    "tags": ["container", "query"],
+    "description": "리스트에서 지정한 순번 자리의 원소를 가져온다."
+  },
+  {
+    "id": "cpp.stack.top",
+    "displayName": "std::stack::top",
+    "language": "C++",
+    "library": "STL stack",
+    "aliases": ["top", "stack.top", "std::stack::top"],
+    "tags": ["container", "stack", "query"],
+    "description": "맨 위에 있는 원소를 제거하지 않고 들여다본다."
+  },
+  {
+    "id": "java.deque.peek",
+    "displayName": "Deque.peek",
+    "language": "Java",
+    "library": "java.util Deque",
+    "aliases": ["peek", "Deque.peek"],
+    "tags": ["container", "query"],
+    "description": "맨 앞이나 위에 있는 원소를 제거하지 않고 살펴본다."
+  },
+  {
+    "id": "cpp.algorithm.count",
+    "displayName": "std::count",
+    "language": "C++",
+    "library": "STL algorithm",
+    "aliases": ["count", "std::count"],
+    "tags": ["algorithm", "search"],
+    "description": "범위 안에 특정 값과 같은 원소가 몇 개 들어 있는지 센다."
+  },
+  {
+    "id": "python.list.count",
+    "displayName": "list.count",
+    "language": "Python",
+    "library": "list",
+    "aliases": ["count", "list.count"],
+    "tags": ["container", "search"],
+    "description": "리스트 안에 특정 값과 같은 항목이 몇 번 나오는지 센다."
+  },
+  {
+    "id": "java.collections.frequency",
+    "displayName": "Collections.frequency",
+    "language": "Java",
+    "library": "java.util Collections",
+    "aliases": ["frequency", "Collections.frequency"],
+    "tags": ["container", "search"],
+    "description": "리스트 안에 특정 값과 같은 요소가 몇 번 등장하는지 센다."
+  },
+  {
+    "id": "cpp.algorithm.min_element",
+    "displayName": "std::min_element",
+    "language": "C++",
+    "library": "STL algorithm",
+    "aliases": ["min_element", "std::min_element"],
+    "tags": ["algorithm", "compare"],
+    "description": "여러 원소 가운데 가장 작은 값이 있는 자리를 찾아낸다."
+  },
+  {
+    "id": "cpp.algorithm.max_element",
+    "displayName": "std::max_element",
+    "language": "C++",
+    "library": "STL algorithm",
+    "aliases": ["max_element", "std::max_element"],
+    "tags": ["algorithm", "compare"],
+    "description": "여러 원소 가운데 가장 큰 값이 있는 자리를 찾아낸다."
+  },
+  {
+    "id": "java.collections.min",
+    "displayName": "Collections.min",
+    "language": "Java",
+    "library": "java.util Collections",
+    "aliases": ["min", "Collections.min"],
+    "tags": ["container", "compare"],
+    "description": "모아 둔 원소들 중 가장 작은 값을 찾아 반환한다."
+  },
+  {
+    "id": "java.collections.max",
+    "displayName": "Collections.max",
+    "language": "Java",
+    "library": "java.util Collections",
+    "aliases": ["max", "Collections.max"],
+    "tags": ["container", "compare"],
+    "description": "모아 둔 원소들 중 가장 큰 값을 찾아 반환한다."
+  },
+  {
+    "id": "cpp.numeric.accumulate",
+    "displayName": "std::accumulate",
+    "language": "C++",
+    "library": "numeric",
+    "aliases": ["accumulate", "std::accumulate"],
+    "tags": ["algorithm", "math"],
+    "description": "여러 수를 처음부터 끝까지 모두 더해 총합을 구한다."
+  },
+  {
+    "id": "python.builtin.sum",
+    "displayName": "sum",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["sum"],
+    "tags": ["math"],
+    "description": "여러 수를 전부 더한 합계를 돌려준다."
+  },
+  {
+    "id": "java.stream.sum",
+    "displayName": "IntStream.sum",
+    "language": "Java",
+    "library": "java.util.stream",
+    "aliases": ["sum", "IntStream.sum"],
+    "tags": ["math"],
+    "description": "여러 수를 모두 합한 총합을 반환한다."
+  },
+  {
+    "id": "cpp.algorithm.unique",
+    "displayName": "std::unique",
+    "language": "C++",
+    "library": "STL algorithm",
+    "aliases": ["unique", "std::unique"],
+    "tags": ["algorithm"],
+    "description": "이웃한 중복 값을 걸러내 같은 값이 한 번씩만 남게 한다."
+  },
+  {
+    "id": "python.builtin.set",
+    "displayName": "set",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["set"],
+    "tags": ["container"],
+    "description": "중복을 모두 없애고 서로 다른 값만 모은 모음을 만든다."
+  },
+  {
+    "id": "java.stream.distinct",
+    "displayName": "Stream.distinct",
+    "language": "Java",
+    "library": "java.util.stream",
+    "aliases": ["distinct", "Stream.distinct"],
+    "tags": ["algorithm"],
+    "description": "중복된 요소를 제거하고 서로 다른 것만 남긴다."
+  },
+  {
+    "id": "cpp.algorithm.binary_search",
+    "displayName": "std::binary_search",
+    "language": "C++",
+    "library": "STL algorithm",
+    "aliases": ["binary_search", "std::binary_search"],
+    "tags": ["algorithm", "search"],
+    "description": "정렬된 값들에서 절반씩 좁혀가며 찾는 값이 있는지 빠르게 확인한다."
+  },
+  {
+    "id": "python.bisect.bisect_left",
+    "displayName": "bisect.bisect_left",
+    "language": "Python",
+    "library": "bisect 모듈",
+    "aliases": ["bisect", "bisect_left", "bisect.bisect_left"],
+    "tags": ["algorithm", "search"],
+    "description": "정렬된 값들에서 절반씩 좁혀가며 값이 들어갈 자리를 빠르게 찾는다."
+  },
+  {
+    "id": "java.collections.binarySearch",
+    "displayName": "Collections.binarySearch",
+    "language": "Java",
+    "library": "java.util Collections",
+    "aliases": ["binarySearch", "Collections.binarySearch"],
+    "tags": ["algorithm", "search"],
+    "description": "정렬된 목록에서 절반씩 범위를 줄여가며 찾는 값의 위치를 빠르게 알아낸다."
+  },
+  {
+    "id": "cpp.algorithm.shuffle",
+    "displayName": "std::shuffle",
+    "language": "C++",
+    "library": "STL algorithm",
+    "aliases": ["shuffle", "std::shuffle"],
+    "tags": ["algorithm", "order"],
+    "description": "원소들의 순서를 무작위로 뒤섞는다."
+  },
+  {
+    "id": "python.random.shuffle",
+    "displayName": "random.shuffle",
+    "language": "Python",
+    "library": "random 모듈",
+    "aliases": ["shuffle", "random.shuffle"],
+    "tags": ["order"],
+    "description": "항목들의 순서를 마구잡이로 섞는다."
+  },
+  {
+    "id": "java.collections.shuffle",
+    "displayName": "Collections.shuffle",
+    "language": "Java",
+    "library": "java.util Collections",
+    "aliases": ["shuffle", "Collections.shuffle"],
+    "tags": ["container", "order"],
+    "description": "요소들의 순서를 임의로 뒤섞는다."
+  },
+  {
+    "id": "cpp.algorithm.rotate",
+    "displayName": "std::rotate",
+    "language": "C++",
+    "library": "STL algorithm",
+    "aliases": ["rotate", "std::rotate"],
+    "tags": ["algorithm", "order"],
+    "description": "원소들을 한쪽으로 밀어 회전시켜 시작 지점을 옮긴다."
+  },
+  {
+    "id": "python.deque.rotate",
+    "displayName": "deque.rotate",
+    "language": "Python",
+    "library": "collections deque",
+    "aliases": ["rotate", "deque.rotate"],
+    "tags": ["container", "order"],
+    "description": "항목들을 한쪽으로 돌려 회전시켜 시작 위치를 바꾼다."
+  },
+  {
+    "id": "java.collections.rotate",
+    "displayName": "Collections.rotate",
+    "language": "Java",
+    "library": "java.util Collections",
+    "aliases": ["rotate", "Collections.rotate"],
+    "tags": ["container", "order"],
+    "description": "요소들을 지정한 거리만큼 돌려 회전시킨다."
+  },
+  {
+    "id": "cpp.algorithm.fill",
+    "displayName": "std::fill",
+    "language": "C++",
+    "library": "STL algorithm",
+    "aliases": ["fill", "std::fill"],
+    "tags": ["algorithm"],
+    "description": "범위 안의 모든 자리를 같은 값으로 채운다."
+  },
+  {
+    "id": "java.collections.fill",
+    "displayName": "Collections.fill",
+    "language": "Java",
+    "library": "java.util Collections",
+    "aliases": ["fill", "Collections.fill"],
+    "tags": ["container"],
+    "description": "리스트의 모든 자리를 같은 값으로 채워 넣는다."
+  },
+  {
+    "id": "cpp.algorithm.swap",
+    "displayName": "std::swap",
+    "language": "C++",
+    "library": "STL algorithm",
+    "aliases": ["swap", "std::swap"],
+    "tags": ["algorithm"],
+    "description": "두 변수에 담긴 값을 서로 맞바꾼다."
+  },
+  {
+    "id": "java.collections.swap",
+    "displayName": "Collections.swap",
+    "language": "Java",
+    "library": "java.util Collections",
+    "aliases": ["swap", "Collections.swap"],
+    "tags": ["container"],
+    "description": "리스트에서 두 위치에 있는 요소를 서로 맞바꾼다."
+  },
+
+  {
+    "id": "cpp.map.subscript",
+    "displayName": "std::map::operator[]",
+    "language": "C++",
+    "library": "STL map",
+    "aliases": ["operator[]", "map[]", "map.operator[]"],
+    "tags": ["container", "map", "query"],
+    "description": "사전에서 키에 해당하는 값을 찾아 주고, 없으면 빈 값을 만들어 자리를 마련한다."
+  },
+  {
+    "id": "java.hashmap.getOrDefault",
+    "displayName": "HashMap.getOrDefault",
+    "language": "Java",
+    "library": "java.util HashMap",
+    "aliases": ["getOrDefault", "HashMap.getOrDefault"],
+    "tags": ["container", "map", "query"],
+    "description": "사전에서 키에 해당하는 값을 찾아 주되, 없으면 미리 정한 기본값을 돌려준다."
+  },
+  {
+    "id": "python.dict.update",
+    "displayName": "dict.update",
+    "language": "Python",
+    "library": "dict",
+    "aliases": ["update", "dict.update"],
+    "tags": ["container", "map", "add"],
+    "description": "사전에 여러 키와 값 짝을 한꺼번에 새로 저장하거나 기존 값을 갱신한다."
+  },
+  {
+    "id": "cpp.map.erase",
+    "displayName": "std::map::erase",
+    "language": "C++",
+    "library": "STL map",
+    "aliases": ["erase", "map.erase", "std::map::erase"],
+    "tags": ["container", "map", "remove"],
+    "description": "사전에서 특정 키와 그에 딸린 값을 찾아 지운다."
+  },
+  {
+    "id": "python.dict.pop",
+    "displayName": "dict.pop",
+    "language": "Python",
+    "library": "dict",
+    "aliases": ["pop", "dict.pop"],
+    "tags": ["container", "map", "remove"],
+    "description": "사전에서 특정 키를 빼내고 그 키에 있던 값을 돌려준다."
+  },
+  {
+    "id": "java.hashmap.remove",
+    "displayName": "HashMap.remove",
+    "language": "Java",
+    "library": "java.util HashMap",
+    "aliases": ["remove", "HashMap.remove"],
+    "tags": ["container", "map", "remove"],
+    "description": "사전에서 특정 키와 그 값을 찾아 없앤다."
+  },
+  {
+    "id": "python.dict.keys",
+    "displayName": "dict.keys",
+    "language": "Python",
+    "library": "dict",
+    "aliases": ["keys", "dict.keys"],
+    "tags": ["container", "map", "query"],
+    "description": "사전에 들어 있는 모든 키만 모아서 돌려준다."
+  },
+  {
+    "id": "java.hashmap.keySet",
+    "displayName": "HashMap.keySet",
+    "language": "Java",
+    "library": "java.util HashMap",
+    "aliases": ["keySet", "HashMap.keySet"],
+    "tags": ["container", "map", "query"],
+    "description": "사전에 들어 있는 모든 키를 모은 집합을 반환한다."
+  },
+  {
+    "id": "python.dict.values",
+    "displayName": "dict.values",
+    "language": "Python",
+    "library": "dict",
+    "aliases": ["values", "dict.values"],
+    "tags": ["container", "map", "query"],
+    "description": "사전에 담긴 모든 값만 모아서 돌려준다."
+  },
+  {
+    "id": "java.hashmap.values",
+    "displayName": "HashMap.values",
+    "language": "Java",
+    "library": "java.util HashMap",
+    "aliases": ["values", "HashMap.values"],
+    "tags": ["container", "map", "query"],
+    "description": "사전에 담긴 모든 값을 모아 반환한다."
+  },
+  {
+    "id": "python.dict.items",
+    "displayName": "dict.items",
+    "language": "Python",
+    "library": "dict",
+    "aliases": ["items", "dict.items"],
+    "tags": ["container", "map", "query"],
+    "description": "사전의 키와 값을 짝지어 하나씩 순회할 수 있게 모아 돌려준다."
+  },
+  {
+    "id": "java.hashmap.entrySet",
+    "displayName": "HashMap.entrySet",
+    "language": "Java",
+    "library": "java.util HashMap",
+    "aliases": ["entrySet", "HashMap.entrySet"],
+    "tags": ["container", "map", "query"],
+    "description": "사전의 키와 값 짝을 하나씩 순회할 수 있게 모은 집합을 반환한다."
+  },
+  {
+    "id": "cpp.set.insert",
+    "displayName": "std::set::insert",
+    "language": "C++",
+    "library": "STL set",
+    "aliases": ["insert", "set.insert", "std::set::insert"],
+    "tags": ["container", "set", "add"],
+    "description": "중복을 허용하지 않는 모음에 새로운 값 하나를 끼워 넣는다."
+  },
+  {
+    "id": "python.set.add",
+    "displayName": "set.add",
+    "language": "Python",
+    "library": "set",
+    "aliases": ["add", "set.add"],
+    "tags": ["container", "set", "add"],
+    "description": "중복을 허용하지 않는 모음에 새로운 값 하나를 더한다."
+  },
+  {
+    "id": "java.hashset.add",
+    "displayName": "HashSet.add",
+    "language": "Java",
+    "library": "java.util HashSet",
+    "aliases": ["add", "HashSet.add"],
+    "tags": ["container", "set", "add"],
+    "description": "중복을 허용하지 않는 모음에 새로운 값 하나를 집어넣는다."
+  },
+  {
+    "id": "cpp.set.count",
+    "displayName": "std::set::count",
+    "language": "C++",
+    "library": "STL set",
+    "aliases": ["count", "set.count", "std::set::count"],
+    "tags": ["container", "set", "search"],
+    "description": "중복 없는 모음 안에 특정 값이 들어 있는지 확인한다."
+  },
+  {
+    "id": "java.hashset.contains",
+    "displayName": "HashSet.contains",
+    "language": "Java",
+    "library": "java.util HashSet",
+    "aliases": ["contains", "HashSet.contains"],
+    "tags": ["container", "set", "search"],
+    "description": "중복 없는 모음 안에 특정 값이 있는지 참 거짓으로 알려준다."
+  },
+  {
+    "id": "cpp.set.erase",
+    "displayName": "std::set::erase",
+    "language": "C++",
+    "library": "STL set",
+    "aliases": ["erase", "set.erase", "std::set::erase"],
+    "tags": ["container", "set", "remove"],
+    "description": "중복 없는 모음에서 특정 값을 찾아 지운다."
+  },
+  {
+    "id": "python.set.discard",
+    "displayName": "set.discard",
+    "language": "Python",
+    "library": "set",
+    "aliases": ["discard", "set.discard"],
+    "tags": ["container", "set", "remove"],
+    "description": "중복 없는 모음에서 특정 값을 찾아 빼낸다."
+  },
+  {
+    "id": "java.hashset.remove",
+    "displayName": "HashSet.remove",
+    "language": "Java",
+    "library": "java.util HashSet",
+    "aliases": ["remove", "HashSet.remove"],
+    "tags": ["container", "set", "remove"],
+    "description": "중복 없는 모음에서 특정 값을 찾아 없앤다."
+  },
+  {
+    "id": "cpp.string.rfind",
+    "displayName": "std::string::rfind",
+    "language": "C++",
+    "library": "STL string",
+    "aliases": ["rfind", "string.rfind", "std::string::rfind"],
+    "tags": ["string", "search"],
+    "description": "문자열에서 특정 부분 문자열이 마지막으로 나타나는 위치를 뒤에서부터 찾는다."
+  },
+  {
+    "id": "python.str.rfind",
+    "displayName": "str.rfind",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["rfind", "str.rfind"],
+    "tags": ["string", "search"],
+    "description": "문자열에서 특정 조각이 가장 뒤에 나타나는 위치를 찾는다."
+  },
+  {
+    "id": "java.string.lastIndexOf",
+    "displayName": "String.lastIndexOf",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["lastIndexOf", "String.lastIndexOf"],
+    "tags": ["string", "search"],
+    "description": "문자열에서 특정 부분이 마지막으로 등장하는 위치를 반환한다."
+  },
+  {
+    "id": "cpp.cctype.toupper",
+    "displayName": "std::toupper",
+    "language": "C++",
+    "library": "cctype",
+    "aliases": ["toupper", "std::toupper"],
+    "tags": ["string", "char"],
+    "description": "글자 하나를 대문자로 바꾼다."
+  },
+  {
+    "id": "cpp.cctype.tolower",
+    "displayName": "std::tolower",
+    "language": "C++",
+    "library": "cctype",
+    "aliases": ["tolower", "std::tolower"],
+    "tags": ["string", "char"],
+    "description": "큰 대문자 글자 하나를 작은 소문자로 낮춘다."
+  },
+  {
+    "id": "python.str.lower",
+    "displayName": "str.lower",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["lower", "str.lower"],
+    "tags": ["string"],
+    "description": "문자열에 섞인 대문자들을 모두 작은 소문자로 낮춰 새 문자열로 돌려준다."
+  },
+  {
+    "id": "java.string.toLowerCase",
+    "displayName": "String.toLowerCase",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["toLowerCase", "String.toLowerCase"],
+    "tags": ["string"],
+    "description": "문자열에 든 대문자를 작은 소문자로 내려 바꿔 반환한다."
+  },
+  {
+    "id": "python.str.strip",
+    "displayName": "str.strip",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["strip", "str.strip"],
+    "tags": ["string"],
+    "description": "문자열 양쪽 끝에 붙은 공백을 떼어 낸 새 문자열을 만든다."
+  },
+  {
+    "id": "java.string.trim",
+    "displayName": "String.trim",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["trim", "String.trim"],
+    "tags": ["string"],
+    "description": "문자열 앞뒤에 붙은 공백을 잘라내 반환한다."
+  },
+  {
+    "id": "cpp.string.starts_with",
+    "displayName": "std::string::starts_with",
+    "language": "C++",
+    "library": "STL string",
+    "aliases": ["starts_with", "string.starts_with"],
+    "tags": ["string", "search"],
+    "description": "문자열이 특정 조각으로 시작하는지 확인한다."
+  },
+  {
+    "id": "python.str.startswith",
+    "displayName": "str.startswith",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["startswith", "str.startswith"],
+    "tags": ["string", "search"],
+    "description": "문자열이 주어진 글자들로 시작하는지 참 거짓으로 알려준다."
+  },
+  {
+    "id": "java.string.startsWith",
+    "displayName": "String.startsWith",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["startsWith", "String.startsWith"],
+    "tags": ["string", "search"],
+    "description": "문자열이 지정한 접두어로 시작하는지 판단해 알려준다."
+  },
+  {
+    "id": "cpp.string.ends_with",
+    "displayName": "std::string::ends_with",
+    "language": "C++",
+    "library": "STL string",
+    "aliases": ["ends_with", "string.ends_with"],
+    "tags": ["string", "search"],
+    "description": "문자열이 특정 조각으로 끝나는지 확인한다."
+  },
+  {
+    "id": "python.str.endswith",
+    "displayName": "str.endswith",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["endswith", "str.endswith"],
+    "tags": ["string", "search"],
+    "description": "문자열이 주어진 글자들로 끝나는지 참 거짓으로 알려준다."
+  },
+  {
+    "id": "java.string.endsWith",
+    "displayName": "String.endsWith",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["endsWith", "String.endsWith"],
+    "tags": ["string", "search"],
+    "description": "문자열이 지정한 접미어로 끝나는지 판단해 알려준다."
+  },
+  {
+    "id": "cpp.string.at",
+    "displayName": "std::string::at",
+    "language": "C++",
+    "library": "STL string",
+    "aliases": ["at", "string.at", "std::string::at"],
+    "tags": ["string", "query"],
+    "description": "문자열에서 지정한 위치의 글자 하나를 꺼내 온다."
+  },
+  {
+    "id": "java.string.charAt",
+    "displayName": "String.charAt",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["charAt", "String.charAt"],
+    "tags": ["string", "query"],
+    "description": "문자열에서 지정한 위치의 글자 하나를 반환한다."
+  },
+  {
+    "id": "cpp.string.contains",
+    "displayName": "std::string::contains",
+    "language": "C++",
+    "library": "STL string",
+    "aliases": ["contains", "string.contains"],
+    "tags": ["string", "search"],
+    "description": "문자열 안에 특정 조각이 들어 있는지 확인한다."
+  },
+  {
+    "id": "java.string.contains",
+    "displayName": "String.contains",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["contains", "String.contains"],
+    "tags": ["string", "search"],
+    "description": "문자열 안에 특정 부분 문자열이 포함돼 있는지 알려준다."
+  },
+  {
+    "id": "cpp.string.compare",
+    "displayName": "std::string::compare",
+    "language": "C++",
+    "library": "STL string",
+    "aliases": ["compare", "string.compare"],
+    "tags": ["string"],
+    "description": "두 문자열의 사전 순서를 견주어 앞뒤 관계를 알려준다."
+  },
+  {
+    "id": "java.string.compareTo",
+    "displayName": "String.compareTo",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["compareTo", "String.compareTo"],
+    "tags": ["string"],
+    "description": "두 문자열을 사전 순서로 비교해 앞서는지 뒤지는지 알려준다."
+  },
+  {
+    "id": "java.string.join",
+    "displayName": "String.join",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["join", "String.join"],
+    "tags": ["string"],
+    "description": "여러 문자열 조각 사이에 구분 기호를 끼워 하나로 이어 붙인다."
+  },
+  {
+    "id": "java.string.valueOf",
+    "displayName": "String.valueOf",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["valueOf", "String.valueOf"],
+    "tags": ["convert", "string"],
+    "description": "숫자나 다른 값을 문자열 형태로 바꿔 반환한다."
+  },
+  {
+    "id": "cpp.string.stod",
+    "displayName": "std::stod",
+    "language": "C++",
+    "library": "STL string",
+    "aliases": ["stod", "std::stod"],
+    "tags": ["convert", "number"],
+    "description": "실수가 적힌 문자열을 해석해 소수점 있는 수로 변환한다."
+  },
+  {
+    "id": "python.builtin.float",
+    "displayName": "float",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["float"],
+    "tags": ["convert", "number"],
+    "description": "문자열이나 정수를 소수점 있는 실수로 바꿔 준다."
+  },
+  {
+    "id": "java.lang.parseDouble",
+    "displayName": "Double.parseDouble",
+    "language": "Java",
+    "library": "java.lang Double",
+    "aliases": ["parseDouble", "Double.parseDouble"],
+    "tags": ["convert", "number"],
+    "description": "실수 형태의 문자열을 풀어 소수점 있는 수로 변환한다."
+  },
+
+  {
+    "id": "cpp.cmath.ceil",
+    "displayName": "std::ceil",
+    "language": "C++",
+    "library": "cmath",
+    "aliases": ["ceil", "std::ceil"],
+    "tags": ["math"],
+    "description": "소수점 이하를 위로 올려 바로 위의 정수로 만든다."
+  },
+  {
+    "id": "python.math.ceil",
+    "displayName": "math.ceil",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["ceil", "math.ceil"],
+    "tags": ["math"],
+    "description": "주어진 실수를 바로 위 정수로 끌어올린 값을 구한다."
+  },
+  {
+    "id": "java.math.ceil",
+    "displayName": "Math.ceil",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["ceil", "Math.ceil"],
+    "tags": ["math"],
+    "description": "수를 위쪽 정수 방향으로 올림한 값을 반환한다."
+  },
+  {
+    "id": "cpp.cmath.floor",
+    "displayName": "std::floor",
+    "language": "C++",
+    "library": "cmath",
+    "aliases": ["floor", "std::floor"],
+    "tags": ["math"],
+    "description": "소수점 이하를 아래로 버려 바로 아래의 정수로 만든다."
+  },
+  {
+    "id": "python.math.floor",
+    "displayName": "math.floor",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["floor", "math.floor"],
+    "tags": ["math"],
+    "description": "주어진 실수의 소수 부분을 떼어 바로 아래 정수로 내린다."
+  },
+  {
+    "id": "java.math.floor",
+    "displayName": "Math.floor",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["floor", "Math.floor"],
+    "tags": ["math"],
+    "description": "수를 아래쪽 정수 방향으로 내림한 값을 반환한다."
+  },
+  {
+    "id": "cpp.cmath.round",
+    "displayName": "std::round",
+    "language": "C++",
+    "library": "cmath",
+    "aliases": ["round", "std::round"],
+    "tags": ["math"],
+    "description": "소수 첫째 자리에서 반올림해 가장 가까운 정수로 만든다."
+  },
+  {
+    "id": "python.builtin.round",
+    "displayName": "round",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["round"],
+    "tags": ["math"],
+    "description": "주어진 수를 가장 가까운 정수로 반올림한다."
+  },
+  {
+    "id": "java.math.round",
+    "displayName": "Math.round",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["round", "Math.round"],
+    "tags": ["math"],
+    "description": "수를 가장 가까운 정수로 반올림한 값을 반환한다."
+  },
+  {
+    "id": "cpp.cmath.log",
+    "displayName": "std::log",
+    "language": "C++",
+    "library": "cmath",
+    "aliases": ["log", "std::log"],
+    "tags": ["math"],
+    "description": "어떤 수의 자연로그 값을 계산한다."
+  },
+  {
+    "id": "python.math.log",
+    "displayName": "math.log",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["log", "math.log"],
+    "tags": ["math"],
+    "description": "밑이 e인 자연로그 값을 구해 돌려준다."
+  },
+  {
+    "id": "java.math.log",
+    "displayName": "Math.log",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["log", "Math.log"],
+    "tags": ["math"],
+    "description": "주어진 수의 자연로그 값을 반환한다."
+  },
+  {
+    "id": "cpp.cmath.log10",
+    "displayName": "std::log10",
+    "language": "C++",
+    "library": "cmath",
+    "aliases": ["log10", "std::log10"],
+    "tags": ["math"],
+    "description": "어떤 수의 밑이 10인 상용로그 값을 계산한다."
+  },
+  {
+    "id": "python.math.log10",
+    "displayName": "math.log10",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["log10", "math.log10"],
+    "tags": ["math"],
+    "description": "밑이 10인 상용로그 값을 구해 돌려준다."
+  },
+  {
+    "id": "java.math.log10",
+    "displayName": "Math.log10",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["log10", "Math.log10"],
+    "tags": ["math"],
+    "description": "주어진 수의 상용로그 값을 반환한다."
+  },
+  {
+    "id": "cpp.cmath.exp",
+    "displayName": "std::exp",
+    "language": "C++",
+    "library": "cmath",
+    "aliases": ["exp", "std::exp"],
+    "tags": ["math"],
+    "description": "자연상수 e를 주어진 수만큼 거듭제곱한 값을 계산한다."
+  },
+  {
+    "id": "python.math.exp",
+    "displayName": "math.exp",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["exp", "math.exp"],
+    "tags": ["math"],
+    "description": "자연상수 e의 거듭제곱 값을 구해 돌려준다."
+  },
+  {
+    "id": "java.math.exp",
+    "displayName": "Math.exp",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["exp", "Math.exp"],
+    "tags": ["math"],
+    "description": "e를 주어진 지수로 거듭제곱한 값을 반환한다."
+  },
+  {
+    "id": "cpp.cmath.sin",
+    "displayName": "std::sin",
+    "language": "C++",
+    "library": "cmath",
+    "aliases": ["sin", "std::sin"],
+    "tags": ["math"],
+    "description": "직각삼각형에서 한 예각의 마주보는 변을 빗변으로 나눈 비율을 계산한다."
+  },
+  {
+    "id": "python.math.sin",
+    "displayName": "math.sin",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["sin", "math.sin"],
+    "tags": ["math"],
+    "description": "주어진 각에서 마주보는 변과 빗변의 비율을 구해 돌려준다."
+  },
+  {
+    "id": "java.math.sin",
+    "displayName": "Math.sin",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["sin", "Math.sin"],
+    "tags": ["math"],
+    "description": "한 각의 마주보는 변 대 빗변 비율을 반환한다."
+  },
+  {
+    "id": "cpp.cmath.cos",
+    "displayName": "std::cos",
+    "language": "C++",
+    "library": "cmath",
+    "aliases": ["cos", "std::cos"],
+    "tags": ["math"],
+    "description": "직각삼각형에서 한 예각에 붙은 변을 빗변으로 나눈 비율을 계산한다."
+  },
+  {
+    "id": "python.math.cos",
+    "displayName": "math.cos",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["cos", "math.cos"],
+    "tags": ["math"],
+    "description": "주어진 각에서 이웃해 붙어 있는 변과 빗변의 비율을 구해 돌려준다."
+  },
+  {
+    "id": "java.math.cos",
+    "displayName": "Math.cos",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["cos", "Math.cos"],
+    "tags": ["math"],
+    "description": "한 각의 이웃한 변 대 빗변 비율을 반환한다."
+  },
+  {
+    "id": "cpp.cmath.tan",
+    "displayName": "std::tan",
+    "language": "C++",
+    "library": "cmath",
+    "aliases": ["tan", "std::tan"],
+    "tags": ["math"],
+    "description": "직각삼각형에서 한 예각의 마주보는 변을 붙은 변으로 나눈 비율을 계산한다."
+  },
+  {
+    "id": "python.math.tan",
+    "displayName": "math.tan",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["tan", "math.tan"],
+    "tags": ["math"],
+    "description": "주어진 각에서 마주보는 변과 이웃한 변의 비율을 구해 돌려준다."
+  },
+  {
+    "id": "java.math.tan",
+    "displayName": "Math.tan",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["tan", "Math.tan"],
+    "tags": ["math"],
+    "description": "한 각의 마주보는 변 대 이웃한 변 비율을 반환한다."
+  },
+  {
+    "id": "cpp.cmath.hypot",
+    "displayName": "std::hypot",
+    "language": "C++",
+    "library": "cmath",
+    "aliases": ["hypot", "std::hypot"],
+    "tags": ["math"],
+    "description": "직각삼각형의 두 변 길이로 빗변의 길이를 계산한다."
+  },
+  {
+    "id": "python.math.hypot",
+    "displayName": "math.hypot",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["hypot", "math.hypot"],
+    "tags": ["math"],
+    "description": "두 직각 변의 길이로부터 빗변 길이를 구해 돌려준다."
+  },
+  {
+    "id": "java.math.hypot",
+    "displayName": "Math.hypot",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["hypot", "Math.hypot"],
+    "tags": ["math"],
+    "description": "직각을 낀 두 변으로 빗변 길이를 반환한다."
+  },
+  {
+    "id": "cpp.numeric.gcd",
+    "displayName": "std::gcd",
+    "language": "C++",
+    "library": "numeric",
+    "aliases": ["gcd", "std::gcd"],
+    "tags": ["math"],
+    "description": "두 정수를 모두 나누어떨어지게 하는 가장 큰 공통 약수를 구한다."
+  },
+  {
+    "id": "python.math.gcd",
+    "displayName": "math.gcd",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["gcd", "math.gcd"],
+    "tags": ["math"],
+    "description": "두 정수의 최대공약수를 구해 돌려준다."
+  },
+  {
+    "id": "java.biginteger.gcd",
+    "displayName": "BigInteger.gcd",
+    "language": "Java",
+    "library": "java.math BigInteger",
+    "aliases": ["gcd", "BigInteger.gcd"],
+    "tags": ["math"],
+    "description": "두 정수를 동시에 나누는 가장 큰 약수를 반환한다."
+  },
+  {
+    "id": "cpp.cstdlib.rand",
+    "displayName": "std::rand",
+    "language": "C++",
+    "library": "cstdlib",
+    "aliases": ["rand", "std::rand"],
+    "tags": ["math"],
+    "description": "예측할 수 없는 임의의 정수를 하나 만들어 낸다."
+  },
+  {
+    "id": "python.random.random",
+    "displayName": "random.random",
+    "language": "Python",
+    "library": "random 모듈",
+    "aliases": ["random", "random.random"],
+    "tags": ["math"],
+    "description": "0 이상 1 미만 구간에서 임의의 실수를 하나 뽑는다."
+  },
+  {
+    "id": "java.math.random",
+    "displayName": "Math.random",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["random", "Math.random"],
+    "tags": ["math"],
+    "description": "0 이상 1 미만 범위의 임의의 실수를 하나 반환한다."
+  },
+  {
+    "id": "cpp.bit.popcount",
+    "displayName": "std::popcount",
+    "language": "C++",
+    "library": "bit",
+    "aliases": ["popcount", "std::popcount"],
+    "tags": ["math", "bit"],
+    "description": "정수를 이진수로 봤을 때 켜진 1 비트의 개수를 센다."
+  },
+  {
+    "id": "python.int.bit_count",
+    "displayName": "int.bit_count",
+    "language": "Python",
+    "library": "int",
+    "aliases": ["bit_count", "int.bit_count"],
+    "tags": ["math", "bit"],
+    "description": "정수를 이진수로 나타냈을 때 1인 비트가 몇 개인지 센다."
+  },
+  {
+    "id": "java.integer.bitCount",
+    "displayName": "Integer.bitCount",
+    "language": "Java",
+    "library": "java.lang Integer",
+    "aliases": ["bitCount", "Integer.bitCount"],
+    "tags": ["math", "bit"],
+    "description": "정수의 이진 표현에서 1로 된 비트 수를 반환한다."
+  },
+  {
+    "id": "cpp.cctype.isdigit",
+    "displayName": "std::isdigit",
+    "language": "C++",
+    "library": "cctype",
+    "aliases": ["isdigit", "std::isdigit"],
+    "tags": ["char"],
+    "description": "글자 하나가 0부터 9까지의 숫자 문자인지 확인한다."
+  },
+  {
+    "id": "python.str.isdigit",
+    "displayName": "str.isdigit",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["isdigit", "str.isdigit"],
+    "tags": ["char", "string"],
+    "description": "문자열이 숫자로만 채워져 있는지 검사한다."
+  },
+  {
+    "id": "java.character.isDigit",
+    "displayName": "Character.isDigit",
+    "language": "Java",
+    "library": "java.lang Character",
+    "aliases": ["isDigit", "Character.isDigit"],
+    "tags": ["char"],
+    "description": "주어진 문자가 숫자에 해당하는지 판별한다."
+  },
+  {
+    "id": "cpp.cctype.isalpha",
+    "displayName": "std::isalpha",
+    "language": "C++",
+    "library": "cctype",
+    "aliases": ["isalpha", "std::isalpha"],
+    "tags": ["char"],
+    "description": "글자 하나가 알파벳 문자인지 확인한다."
+  },
+  {
+    "id": "python.str.isalpha",
+    "displayName": "str.isalpha",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["isalpha", "str.isalpha"],
+    "tags": ["char", "string"],
+    "description": "문자열에 알파벳 글자만 들어 있는지 검사한다."
+  },
+  {
+    "id": "java.character.isLetter",
+    "displayName": "Character.isLetter",
+    "language": "Java",
+    "library": "java.lang Character",
+    "aliases": ["isLetter", "Character.isLetter"],
+    "tags": ["char"],
+    "description": "주어진 문자가 글자, 즉 알파벳인지 판별한다."
+  },
+  {
+    "id": "cpp.cctype.isspace",
+    "displayName": "std::isspace",
+    "language": "C++",
+    "library": "cctype",
+    "aliases": ["isspace", "std::isspace"],
+    "tags": ["char"],
+    "description": "글자 하나가 공백 문자인지 확인한다."
+  },
+  {
+    "id": "python.str.isspace",
+    "displayName": "str.isspace",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["isspace", "str.isspace"],
+    "tags": ["char", "string"],
+    "description": "문자열이 공백류 문자로만 되어 있는지 검사한다."
+  },
+  {
+    "id": "java.character.isWhitespace",
+    "displayName": "Character.isWhitespace",
+    "language": "Java",
+    "library": "java.lang Character",
+    "aliases": ["isWhitespace", "Character.isWhitespace"],
+    "tags": ["char"],
+    "description": "주어진 문자가 띄어쓰기 같은 공백인지 판별한다."
+  },
+  {
+    "id": "java.io.print",
+    "displayName": "System.out.print",
+    "language": "Java",
+    "library": "java.io PrintStream",
+    "aliases": ["print", "System.out.print"],
+    "tags": ["io", "output"],
+    "description": "값을 화면에 출력하되 줄을 바꾸지 않고 이어서 찍는다."
+  },
+  {
+    "id": "java.scanner.nextLine",
+    "displayName": "Scanner.nextLine",
+    "language": "Java",
+    "library": "java.util Scanner",
+    "aliases": ["nextLine", "Scanner.nextLine"],
+    "tags": ["io", "input"],
+    "description": "입력에서 한 줄을 통째로 읽어 문자열로 가져온다."
+  },
+  {
+    "id": "cpp.cstdio.printf",
+    "displayName": "std::printf",
+    "language": "C++",
+    "library": "cstdio",
+    "aliases": ["printf", "std::printf"],
+    "tags": ["io", "output"],
+    "description": "형식 틀에 값을 끼워 맞춰 화면에 출력한다."
+  },
+  {
+    "id": "python.str.format",
+    "displayName": "str.format",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["format", "str.format"],
+    "tags": ["string"],
+    "description": "형식 틀의 자리표시자에 값을 끼워 넣어 문자열을 완성한다."
+  },
+  {
+    "id": "java.string.format",
+    "displayName": "String.format",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["format", "String.format"],
+    "tags": ["string"],
+    "description": "형식 틀에 값을 끼워 넣어 문자열을 만들어 반환한다."
+  },
+  {
+    "id": "cpp.cstdlib.srand",
+    "displayName": "std::srand",
+    "language": "C++",
+    "library": "cstdlib",
+    "aliases": ["srand", "std::srand"],
+    "tags": ["math"],
+    "description": "난수를 만들기 전에 그 흐름의 시작점이 되는 기준 값을 미리 정해 둔다."
+  },
+  {
+    "id": "cpp.cctype.isupper",
+    "displayName": "std::isupper",
+    "language": "C++",
+    "library": "cctype",
+    "aliases": ["isupper", "std::isupper"],
+    "tags": ["char"],
+    "description": "글자 하나가 큰 대문자에 해당하는지 확인한다."
+  },
+  {
+    "id": "cpp.cctype.islower",
+    "displayName": "std::islower",
+    "language": "C++",
+    "library": "cctype",
+    "aliases": ["islower", "std::islower"],
+    "tags": ["char"],
+    "description": "글자 하나가 작은 소문자에 해당하는지 확인한다."
+  },
+  {
+    "id": "cpp.cmath.asin",
+    "displayName": "std::asin",
+    "language": "C++",
+    "library": "cmath",
+    "aliases": ["asin", "std::asin"],
+    "tags": ["math"],
+    "description": "마주보는 변과 빗변의 비율로부터 그에 해당하는 예각을 거꾸로 구한다."
+  },
+  {
+    "id": "cpp.cmath.acos",
+    "displayName": "std::acos",
+    "language": "C++",
+    "library": "cmath",
+    "aliases": ["acos", "std::acos"],
+    "tags": ["math"],
+    "description": "붙은 변과 빗변의 비율로부터 그에 해당하는 예각을 거꾸로 구한다."
+  },
+  {
+    "id": "cpp.cmath.atan",
+    "displayName": "std::atan",
+    "language": "C++",
+    "library": "cmath",
+    "aliases": ["atan", "std::atan"],
+    "tags": ["math"],
+    "description": "두 변 사이의 비율 하나로부터 그에 해당하는 각을 거꾸로 구한다."
+  },
+  {
+    "id": "cpp.cmath.atan2",
+    "displayName": "std::atan2",
+    "language": "C++",
+    "library": "cmath",
+    "aliases": ["atan2", "std::atan2"],
+    "tags": ["math"],
+    "description": "평면 위 점의 가로세로 좌표로부터 원점에서 바라본 방향의 각을 구한다."
+  },
+  {
+    "id": "cpp.cmath.fmod",
+    "displayName": "std::fmod",
+    "language": "C++",
+    "library": "cmath",
+    "aliases": ["fmod", "std::fmod"],
+    "tags": ["math"],
+    "description": "실수를 다른 실수로 나누고 남은 나머지를 실수로 구한다."
+  },
+  {
+    "id": "python.random.randint",
+    "displayName": "random.randint",
+    "language": "Python",
+    "library": "random 모듈",
+    "aliases": ["randint", "random.randint"],
+    "tags": ["math"],
+    "description": "정해진 두 정수 사이에서 임의의 정수 하나를 양 끝을 포함해 고른다."
+  },
+  {
+    "id": "python.random.choice",
+    "displayName": "random.choice",
+    "language": "Python",
+    "library": "random 모듈",
+    "aliases": ["choice", "random.choice"],
+    "tags": ["math", "container"],
+    "description": "여러 항목이 담긴 묶음에서 아무거나 하나를 임의로 골라낸다."
+  },
+  {
+    "id": "python.bisect.bisect_right",
+    "displayName": "bisect.bisect_right",
+    "language": "Python",
+    "library": "bisect 모듈",
+    "aliases": ["bisect_right", "bisect.bisect_right"],
+    "tags": ["algorithm", "search"],
+    "description": "정렬된 값들에서 같은 값이 있어도 그 뒤쪽으로 값이 들어갈 자리를 빠르게 찾는다."
+  },
+  {
+    "id": "python.bisect.insort",
+    "displayName": "bisect.insort",
+    "language": "Python",
+    "library": "bisect 모듈",
+    "aliases": ["insort", "bisect.insort"],
+    "tags": ["algorithm", "search"],
+    "description": "정렬 순서가 흐트러지지 않도록 알맞은 자리를 찾아 값 하나를 끼워 넣는다."
+  },
+  {
+    "id": "python.str.isupper",
+    "displayName": "str.isupper",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["isupper", "str.isupper"],
+    "tags": ["char", "string"],
+    "description": "글자들이 모두 큰 대문자로만 되어 있는지 검사한다."
+  },
+  {
+    "id": "python.str.islower",
+    "displayName": "str.islower",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["islower", "str.islower"],
+    "tags": ["char", "string"],
+    "description": "글자들이 모두 작은 소문자로만 되어 있는지 검사한다."
+  },
+  {
+    "id": "python.math.asin",
+    "displayName": "math.asin",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["asin", "math.asin"],
+    "tags": ["math"],
+    "description": "마주보는 변과 빗변의 비율을 받아 그에 대응하는 예각을 되돌려 구한다."
+  },
+  {
+    "id": "python.math.acos",
+    "displayName": "math.acos",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["acos", "math.acos"],
+    "tags": ["math"],
+    "description": "붙은 변과 빗변의 비율을 받아 그에 대응하는 예각을 되돌려 구한다."
+  },
+  {
+    "id": "python.math.atan",
+    "displayName": "math.atan",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["atan", "math.atan"],
+    "tags": ["math"],
+    "description": "두 변 사이의 비율 값을 받아 그에 대응하는 각을 되돌려 구한다."
+  },
+  {
+    "id": "python.math.atan2",
+    "displayName": "math.atan2",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["atan2", "math.atan2"],
+    "tags": ["math"],
+    "description": "점의 세로 좌표와 가로 좌표를 받아 원점 기준 방향의 각을 구한다."
+  },
+  {
+    "id": "python.math.fabs",
+    "displayName": "math.fabs",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["fabs", "math.fabs"],
+    "tags": ["math"],
+    "description": "어떤 수의 부호를 떼어 낸 절댓값을 실수 형태로 돌려준다."
+  },
+  {
+    "id": "python.math.fmod",
+    "displayName": "math.fmod",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["fmod", "math.fmod"],
+    "tags": ["math"],
+    "description": "실수끼리 나눗셈을 하고 남는 나머지를 실수로 계산한다."
+  },
+  {
+    "id": "python.int.bit_length",
+    "displayName": "int.bit_length",
+    "language": "Python",
+    "library": "int",
+    "aliases": ["bit_length", "int.bit_length"],
+    "tags": ["math", "bit"],
+    "description": "정수를 이진수로 적었을 때 필요한 자릿수가 몇 칸인지 알려준다."
+  },
+  {
+    "id": "python.deque.append",
+    "displayName": "deque.append",
+    "language": "Python",
+    "library": "collections deque",
+    "aliases": ["append", "deque.append"],
+    "tags": ["container", "queue", "add"],
+    "description": "양쪽 끝이 열린 줄의 맨 뒤에 항목 하나를 새로 붙인다."
+  },
+  {
+    "id": "python.deque.appendleft",
+    "displayName": "deque.appendleft",
+    "language": "Python",
+    "library": "collections deque",
+    "aliases": ["appendleft", "deque.appendleft"],
+    "tags": ["container", "queue", "add"],
+    "description": "양쪽 끝이 열린 줄의 맨 앞에 항목 하나를 새로 끼워 넣는다."
+  },
+  {
+    "id": "python.deque.popleft",
+    "displayName": "deque.popleft",
+    "language": "Python",
+    "library": "collections deque",
+    "aliases": ["popleft", "deque.popleft"],
+    "tags": ["container", "queue", "remove"],
+    "description": "양쪽 끝이 열린 줄의 맨 앞 항목 하나를 꺼내 제거하고 그 값을 돌려준다."
+  },
+  {
+    "id": "java.integer.toBinaryString",
+    "displayName": "Integer.toBinaryString",
+    "language": "Java",
+    "library": "java.lang Integer",
+    "aliases": ["toBinaryString", "Integer.toBinaryString"],
+    "tags": ["convert", "bit"],
+    "description": "정수를 0과 1로 이루어진 이진 표기 글자열로 바꾼다."
+  },
+  {
+    "id": "java.integer.valueOf",
+    "displayName": "Integer.valueOf",
+    "language": "Java",
+    "library": "java.lang Integer",
+    "aliases": ["valueOf", "Integer.valueOf"],
+    "tags": ["convert", "number"],
+    "description": "숫자 형태의 글자열이나 수를 정수 값으로 만들어 돌려준다."
+  },
+  {
+    "id": "java.scanner.nextInt",
+    "displayName": "Scanner.nextInt",
+    "language": "Java",
+    "library": "java.util Scanner",
+    "aliases": ["nextInt", "Scanner.nextInt"],
+    "tags": ["io", "input"],
+    "description": "입력에서 정수 하나를 읽어 수 값으로 받아 온다."
+  },
+  {
+    "id": "java.scanner.next",
+    "displayName": "Scanner.next",
+    "language": "Java",
+    "library": "java.util Scanner",
+    "aliases": ["next", "Scanner.next"],
+    "tags": ["io", "input"],
+    "description": "입력에서 공백으로 끊어진 단어 하나를 읽어 문자열로 받아 온다."
+  },
+  {
+    "id": "java.deque.offerFirst",
+    "displayName": "Deque.offerFirst",
+    "language": "Java",
+    "library": "java.util Deque",
+    "aliases": ["offerFirst", "Deque.offerFirst"],
+    "tags": ["container", "add"],
+    "description": "양끝을 다루는 묶음의 맨 앞쪽에 원소 하나를 새로 넣는다."
+  },
+  {
+    "id": "java.deque.offerLast",
+    "displayName": "Deque.offerLast",
+    "language": "Java",
+    "library": "java.util Deque",
+    "aliases": ["offerLast", "Deque.offerLast"],
+    "tags": ["container", "add"],
+    "description": "양끝을 다루는 묶음의 맨 뒤쪽에 원소 하나를 새로 넣는다."
+  },
+  {
+    "id": "java.character.isUpperCase",
+    "displayName": "Character.isUpperCase",
+    "language": "Java",
+    "library": "java.lang Character",
+    "aliases": ["isUpperCase", "Character.isUpperCase"],
+    "tags": ["char"],
+    "description": "글자 하나가 큰 대문자에 속하는지 판별한다."
+  },
+  {
+    "id": "java.character.isLowerCase",
+    "displayName": "Character.isLowerCase",
+    "language": "Java",
+    "library": "java.lang Character",
+    "aliases": ["isLowerCase", "Character.isLowerCase"],
+    "tags": ["char"],
+    "description": "글자 하나가 작은 소문자에 속하는지 판별한다."
+  },
+  {
+    "id": "java.math.asin",
+    "displayName": "Math.asin",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["asin", "Math.asin"],
+    "tags": ["math"],
+    "description": "마주보는 변 대 빗변의 비율에서 거슬러 그 예각을 알아낸다."
+  },
+  {
+    "id": "java.math.acos",
+    "displayName": "Math.acos",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["acos", "Math.acos"],
+    "tags": ["math"],
+    "description": "붙은 변 대 빗변의 비율에서 거슬러 그 예각을 알아낸다."
+  },
+  {
+    "id": "java.math.atan",
+    "displayName": "Math.atan",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["atan", "Math.atan"],
+    "tags": ["math"],
+    "description": "두 변의 비율 하나에서 거슬러 그 각을 알아낸다."
+  },
+  {
+    "id": "java.math.atan2",
+    "displayName": "Math.atan2",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["atan2", "Math.atan2"],
+    "tags": ["math"],
+    "description": "평면 점의 세로와 가로 좌표에서 원점 기준 바라보는 방향의 각을 알아낸다."
+  },
+  {
+    "id": "java.stringbuilder.append",
+    "displayName": "StringBuilder.append",
+    "language": "Java",
+    "library": "java.lang StringBuilder",
+    "aliases": ["append", "StringBuilder.append"],
+    "tags": ["string", "add"],
+    "description": "만들고 있는 글자열의 끝에 새로운 글자 묶음을 이어 붙인다."
+  },
+  {
+    "id": "java.stringbuilder.toString",
+    "displayName": "StringBuilder.toString",
+    "language": "Java",
+    "library": "java.lang StringBuilder",
+    "aliases": ["toString", "StringBuilder.toString"],
+    "tags": ["string", "convert"],
+    "description": "차곡차곡 모아 둔 글자들을 하나의 완성된 문자열로 뽑아낸다."
+  },
+  {
+    "id": "java.stringbuilder.reverse",
+    "displayName": "StringBuilder.reverse",
+    "language": "Java",
+    "library": "java.lang StringBuilder",
+    "aliases": ["reverse", "StringBuilder.reverse"],
+    "tags": ["string", "order"],
+    "description": "쌓아 둔 글자열의 글자 차례를 통째로 거꾸로 뒤집는다."
+  },
+  {
+    "id": "cpp.vector.resize",
+    "displayName": "std::vector::resize",
+    "language": "C++",
+    "library": "STL vector",
+    "aliases": ["resize", "vector.resize", "std::vector::resize"],
+    "tags": ["container", "list"],
+    "description": "리스트의 크기를 지정한 개수로 늘리거나 줄인다."
+  },
+  {
+    "id": "cpp.vector.assign",
+    "displayName": "std::vector::assign",
+    "language": "C++",
+    "library": "STL vector",
+    "aliases": ["assign", "vector.assign", "std::vector::assign"],
+    "tags": ["container", "list"],
+    "description": "리스트의 기존 내용을 모두 버리고 주어진 값들로 통째로 새로 채운다."
+  },
+  {
+    "id": "cpp.vector.reserve",
+    "displayName": "std::vector::reserve",
+    "language": "C++",
+    "library": "STL vector",
+    "aliases": ["reserve", "vector.reserve", "std::vector::reserve"],
+    "tags": ["container", "list"],
+    "description": "앞으로 담을 공간을 미리 확보해 둔다. 지금 담긴 개수는 그대로다."
+  },
+  {
+    "id": "cpp.vector.data",
+    "displayName": "std::vector::data",
+    "language": "C++",
+    "library": "STL vector",
+    "aliases": ["data", "vector.data", "std::vector::data"],
+    "tags": ["container", "list", "query"],
+    "description": "원소들이 줄지어 저장된 맨 앞 지점을 가리키는 값을 돌려준다."
+  },
+  {
+    "id": "cpp.vector.begin",
+    "displayName": "std::vector::begin",
+    "language": "C++",
+    "library": "STL vector",
+    "aliases": ["begin", "vector.begin", "std::vector::begin"],
+    "tags": ["container", "list", "query"],
+    "description": "첫 원소를 가리키는 시작 위치를 돌려준다."
+  },
+  {
+    "id": "cpp.vector.end",
+    "displayName": "std::vector::end",
+    "language": "C++",
+    "library": "STL vector",
+    "aliases": ["end", "vector.end", "std::vector::end"],
+    "tags": ["container", "list", "query"],
+    "description": "마지막 원소 바로 다음의 끝 위치를 돌려준다."
+  },
+  {
+    "id": "cpp.string.push_back",
+    "displayName": "std::string::push_back",
+    "language": "C++",
+    "library": "STL string",
+    "aliases": ["push_back", "string.push_back", "std::string::push_back"],
+    "tags": ["string", "add"],
+    "description": "문자열 맨 끝에 글자 하나를 덧붙인다."
+  },
+  {
+    "id": "cpp.string.append",
+    "displayName": "std::string::append",
+    "language": "C++",
+    "library": "STL string",
+    "aliases": ["append", "string.append", "std::string::append"],
+    "tags": ["string", "add"],
+    "description": "문자열 맨 끝에 다른 문자열을 통째로 이어 붙인다."
+  },
+  {
+    "id": "cpp.string.clear",
+    "displayName": "std::string::clear",
+    "language": "C++",
+    "library": "STL string",
+    "aliases": ["clear", "string.clear", "std::string::clear"],
+    "tags": ["string"],
+    "description": "문자열의 모든 글자를 지워 빈 상태로 만든다."
+  },
+  {
+    "id": "cpp.string.empty",
+    "displayName": "std::string::empty",
+    "language": "C++",
+    "library": "STL string",
+    "aliases": ["empty", "string.empty", "std::string::empty"],
+    "tags": ["string", "query"],
+    "description": "문자열에 글자가 하나도 없는지 확인한다."
+  },
+  {
+    "id": "cpp.string.erase",
+    "displayName": "std::string::erase",
+    "language": "C++",
+    "library": "STL string",
+    "aliases": ["erase", "string.erase", "std::string::erase"],
+    "tags": ["string", "remove"],
+    "description": "문자열에서 지정한 구간의 글자들을 잘라내 없앤다."
+  },
+  {
+    "id": "cpp.string.c_str",
+    "displayName": "std::string::c_str",
+    "language": "C++",
+    "library": "STL string",
+    "aliases": ["c_str", "string.c_str", "std::string::c_str"],
+    "tags": ["string", "convert"],
+    "description": "문자열을 끝 표시가 붙은 옛 방식의 글자 배열 형태로 돌려준다."
+  },
+  {
+    "id": "cpp.stack.size",
+    "displayName": "std::stack::size",
+    "language": "C++",
+    "library": "STL stack",
+    "aliases": ["size", "stack.size", "std::stack::size"],
+    "tags": ["container", "stack", "query"],
+    "description": "쌓여 있는 원소의 전체 개수를 돌려준다."
+  },
+  {
+    "id": "cpp.stack.empty",
+    "displayName": "std::stack::empty",
+    "language": "C++",
+    "library": "STL stack",
+    "aliases": ["empty", "stack.empty", "std::stack::empty"],
+    "tags": ["container", "stack", "query"],
+    "description": "쌓인 원소가 하나도 없는 빈 상태인지 확인한다."
+  },
+  {
+    "id": "cpp.queue.size",
+    "displayName": "std::queue::size",
+    "language": "C++",
+    "library": "STL queue",
+    "aliases": ["size", "queue.size", "std::queue::size"],
+    "tags": ["container", "queue", "query"],
+    "description": "줄 서 있는 원소가 모두 몇 개인지 돌려준다."
+  },
+  {
+    "id": "cpp.queue.empty",
+    "displayName": "std::queue::empty",
+    "language": "C++",
+    "library": "STL queue",
+    "aliases": ["empty", "queue.empty", "std::queue::empty"],
+    "tags": ["container", "queue", "query"],
+    "description": "줄에 원소가 하나도 없는지 확인한다."
+  },
+  {
+    "id": "cpp.queue.front",
+    "displayName": "std::queue::front",
+    "language": "C++",
+    "library": "STL queue",
+    "aliases": ["front", "queue.front", "std::queue::front"],
+    "tags": ["container", "queue", "query"],
+    "description": "줄의 맨 앞 원소를 제거하지 않고 들여다본다."
+  },
+  {
+    "id": "cpp.queue.back",
+    "displayName": "std::queue::back",
+    "language": "C++",
+    "library": "STL queue",
+    "aliases": ["back", "queue.back", "std::queue::back"],
+    "tags": ["container", "queue", "query"],
+    "description": "줄의 맨 뒤 원소를 제거하지 않고 들여다본다."
+  },
+  {
+    "id": "cpp.pqueue.size",
+    "displayName": "std::priority_queue::size",
+    "language": "C++",
+    "library": "STL priority_queue",
+    "aliases": ["size", "priority_queue.size", "std::priority_queue::size"],
+    "tags": ["container", "queue", "heap", "query"],
+    "description": "보관된 원소의 총 개수를 돌려준다."
+  },
+  {
+    "id": "cpp.pqueue.empty",
+    "displayName": "std::priority_queue::empty",
+    "language": "C++",
+    "library": "STL priority_queue",
+    "aliases": ["empty", "priority_queue.empty", "std::priority_queue::empty"],
+    "tags": ["container", "queue", "heap", "query"],
+    "description": "보관된 원소가 하나도 없는지 확인한다."
+  },
+  {
+    "id": "cpp.set.size",
+    "displayName": "std::set::size",
+    "language": "C++",
+    "library": "STL set",
+    "aliases": ["size", "set.size", "std::set::size"],
+    "tags": ["container", "set", "query"],
+    "description": "모아 둔 서로 다른 원소가 몇 개인지 돌려준다."
+  },
+  {
+    "id": "cpp.set.empty",
+    "displayName": "std::set::empty",
+    "language": "C++",
+    "library": "STL set",
+    "aliases": ["empty", "set.empty", "std::set::empty"],
+    "tags": ["container", "set", "query"],
+    "description": "모음에 원소가 하나도 없는지 확인한다."
+  },
+  {
+    "id": "cpp.set.find",
+    "displayName": "std::set::find",
+    "language": "C++",
+    "library": "STL set",
+    "aliases": ["find", "set.find", "std::set::find"],
+    "tags": ["container", "set", "search"],
+    "description": "특정 값이 모음 안에 있는지 그 위치를 찾아 준다."
+  },
+  {
+    "id": "cpp.set.clear",
+    "displayName": "std::set::clear",
+    "language": "C++",
+    "library": "STL set",
+    "aliases": ["clear", "set.clear", "std::set::clear"],
+    "tags": ["container", "set"],
+    "description": "모음에 담긴 원소를 모두 비워 없앤다."
+  },
+  {
+    "id": "cpp.map.find",
+    "displayName": "std::map::find",
+    "language": "C++",
+    "library": "STL map",
+    "aliases": ["find", "map.find", "std::map::find"],
+    "tags": ["container", "map", "search"],
+    "description": "특정 키가 들어 있는지 그 위치를 찾아 준다."
+  },
+  {
+    "id": "cpp.map.empty",
+    "displayName": "std::map::empty",
+    "language": "C++",
+    "library": "STL map",
+    "aliases": ["empty", "map.empty", "std::map::empty"],
+    "tags": ["container", "map", "query"],
+    "description": "저장된 키-값 쌍이 하나도 없는지 확인한다."
+  },
+  {
+    "id": "cpp.algorithm.lower_bound",
+    "displayName": "std::lower_bound",
+    "language": "C++",
+    "library": "STL algorithm",
+    "aliases": ["lower_bound", "std::lower_bound"],
+    "tags": ["algorithm", "search"],
+    "description": "정렬된 값들에서 찾는 값 이상이 처음 나타나는 위치를 짚는다."
+  },
+  {
+    "id": "cpp.algorithm.upper_bound",
+    "displayName": "std::upper_bound",
+    "language": "C++",
+    "library": "STL algorithm",
+    "aliases": ["upper_bound", "std::upper_bound"],
+    "tags": ["algorithm", "search"],
+    "description": "정렬된 값들에서 찾는 값을 넘어서는 값이 처음 나타나는 위치를 짚는다."
+  },
+  {
+    "id": "cpp.algorithm.next_permutation",
+    "displayName": "std::next_permutation",
+    "language": "C++",
+    "library": "STL algorithm",
+    "aliases": ["next_permutation", "std::next_permutation"],
+    "tags": ["algorithm", "order"],
+    "description": "원소들의 배열을 사전순으로 바로 다음 순서로 바꾼다."
+  },
+  {
+    "id": "python.deque.pop",
+    "displayName": "deque.pop",
+    "language": "Python",
+    "library": "collections deque",
+    "aliases": ["pop", "deque.pop"],
+    "tags": ["container", "queue", "remove"],
+    "description": "양쪽 끝이 열린 줄의 맨 뒤 항목 하나를 꺼내 제거하고 그 값을 돌려준다."
+  },
+  {
+    "id": "python.deque.extend",
+    "displayName": "deque.extend",
+    "language": "Python",
+    "library": "collections deque",
+    "aliases": ["extend", "deque.extend"],
+    "tags": ["container", "queue", "add"],
+    "description": "다른 묶음의 항목들을 줄의 뒤쪽에 한꺼번에 이어 붙인다."
+  },
+  {
+    "id": "python.deque.clear",
+    "displayName": "deque.clear",
+    "language": "Python",
+    "library": "collections deque",
+    "aliases": ["clear", "deque.clear"],
+    "tags": ["container", "queue"],
+    "description": "줄에 담긴 항목을 모두 비워 없앤다."
+  },
+  {
+    "id": "python.deque.extendleft",
+    "displayName": "deque.extendleft",
+    "language": "Python",
+    "library": "collections deque",
+    "aliases": ["extendleft", "deque.extendleft"],
+    "tags": ["container", "queue", "add"],
+    "description": "다른 묶음의 항목들을 줄의 앞쪽에 한꺼번에 이어 붙인다."
+  },
+  {
+    "id": "python.dict.setdefault",
+    "displayName": "dict.setdefault",
+    "language": "Python",
+    "library": "dict",
+    "aliases": ["setdefault", "dict.setdefault"],
+    "tags": ["container", "map"],
+    "description": "키가 없으면 기본값으로 새로 넣고, 이미 있으면 원래 값을 그대로 돌려준다."
+  },
+  {
+    "id": "python.dict.popitem",
+    "displayName": "dict.popitem",
+    "language": "Python",
+    "library": "dict",
+    "aliases": ["popitem", "dict.popitem"],
+    "tags": ["container", "map", "remove"],
+    "description": "사전에서 쌍 하나를 꺼내 제거하고 그 키와 값을 함께 돌려준다."
+  },
+  {
+    "id": "python.dict.fromkeys",
+    "displayName": "dict.fromkeys",
+    "language": "Python",
+    "library": "dict",
+    "aliases": ["fromkeys", "dict.fromkeys"],
+    "tags": ["container", "map"],
+    "description": "주어진 키들에 모두 같은 초기값을 붙인 새 사전을 만든다."
+  },
+  {
+    "id": "python.list.extend",
+    "displayName": "list.extend",
+    "language": "Python",
+    "library": "list",
+    "aliases": ["extend", "list.extend"],
+    "tags": ["container", "list", "add"],
+    "description": "다른 묶음의 항목들을 리스트 끝에 한꺼번에 이어 붙인다."
+  },
+  {
+    "id": "python.list.copy",
+    "displayName": "list.copy",
+    "language": "Python",
+    "library": "list",
+    "aliases": ["copy", "list.copy"],
+    "tags": ["container", "list"],
+    "description": "리스트의 항목들을 그대로 복제한 새 리스트를 만든다."
+  },
+  {
+    "id": "python.set.remove",
+    "displayName": "set.remove",
+    "language": "Python",
+    "library": "set",
+    "aliases": ["remove", "set.remove"],
+    "tags": ["container", "set", "remove"],
+    "description": "모음에서 특정 원소를 제거한다. 그 원소가 없으면 오류를 낸다."
+  },
+  {
+    "id": "python.set.union",
+    "displayName": "set.union",
+    "language": "Python",
+    "library": "set",
+    "aliases": ["union", "set.union"],
+    "tags": ["container", "set"],
+    "description": "두 모음에 든 원소를 모두 합친 새 모음을 만든다."
+  },
+  {
+    "id": "python.set.intersection",
+    "displayName": "set.intersection",
+    "language": "Python",
+    "library": "set",
+    "aliases": ["intersection", "set.intersection"],
+    "tags": ["container", "set"],
+    "description": "두 모음에 공통으로 든 원소만 남긴 새 모음을 만든다."
+  },
+  {
+    "id": "python.set.difference",
+    "displayName": "set.difference",
+    "language": "Python",
+    "library": "set",
+    "aliases": ["difference", "set.difference"],
+    "tags": ["container", "set"],
+    "description": "한 모음에서 다른 모음에도 든 원소를 빼낸 새 모음을 만든다."
+  },
+  {
+    "id": "python.set.update",
+    "displayName": "set.update",
+    "language": "Python",
+    "library": "set",
+    "aliases": ["update", "set.update"],
+    "tags": ["container", "set", "add"],
+    "description": "다른 모음의 원소들을 현재 모음에 모두 더해 넣는다."
+  },
+  {
+    "id": "python.str.count",
+    "displayName": "str.count",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["count", "str.count"],
+    "tags": ["string", "search"],
+    "description": "문자열 안에서 특정 조각이 몇 번 나타나는지 센다."
+  },
+  {
+    "id": "python.str.lstrip",
+    "displayName": "str.lstrip",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["lstrip", "str.lstrip"],
+    "tags": ["string"],
+    "description": "문자열의 왼쪽 끝에 붙은 공백류 문자를 떼어 낸다."
+  },
+  {
+    "id": "python.str.rstrip",
+    "displayName": "str.rstrip",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["rstrip", "str.rstrip"],
+    "tags": ["string"],
+    "description": "문자열의 오른쪽 끝에 붙은 공백류 문자를 떼어 낸다."
+  },
+  {
+    "id": "python.str.zfill",
+    "displayName": "str.zfill",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["zfill", "str.zfill"],
+    "tags": ["string"],
+    "description": "문자열 앞을 0으로 채워 지정한 길이에 맞춘다."
+  },
+  {
+    "id": "python.str.title",
+    "displayName": "str.title",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["title", "str.title"],
+    "tags": ["string", "char"],
+    "description": "각 단어의 첫 글자만 대문자로 바꾼다."
+  },
+  {
+    "id": "python.str.center",
+    "displayName": "str.center",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["center", "str.center"],
+    "tags": ["string"],
+    "description": "문자열 양옆을 채워 지정한 너비의 가운데에 놓는다."
+  },
+  {
+    "id": "python.str.index",
+    "displayName": "str.index",
+    "language": "Python",
+    "library": "str",
+    "aliases": ["index", "str.index"],
+    "tags": ["string", "search"],
+    "description": "문자열에서 특정 조각이 처음 나오는 위치를 찾는다. 없으면 오류를 낸다."
+  },
+  {
+    "id": "python.math.factorial",
+    "displayName": "math.factorial",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["factorial", "math.factorial"],
+    "tags": ["math"],
+    "description": "1부터 그 수까지 모두 곱한 계승 값을 구한다."
+  },
+  {
+    "id": "python.math.comb",
+    "displayName": "math.comb",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["comb", "math.comb"],
+    "tags": ["math"],
+    "description": "여러 개 중 순서를 따지지 않고 몇 개를 고르는 경우의 수를 구한다."
+  },
+  {
+    "id": "python.math.perm",
+    "displayName": "math.perm",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["perm", "math.perm"],
+    "tags": ["math"],
+    "description": "여러 개 중 순서를 따져 몇 개를 골라 나열하는 경우의 수를 구한다."
+  },
+  {
+    "id": "python.math.dist",
+    "displayName": "math.dist",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["dist", "math.dist"],
+    "tags": ["math"],
+    "description": "두 점의 좌표 사이 직선 거리를 구한다."
+  },
+  {
+    "id": "python.math.isqrt",
+    "displayName": "math.isqrt",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["isqrt", "math.isqrt"],
+    "tags": ["math"],
+    "description": "어떤 수의 제곱근을 넘지 않는 가장 큰 정수를 구한다."
+  },
+  {
+    "id": "python.math.trunc",
+    "displayName": "math.trunc",
+    "language": "Python",
+    "library": "math 모듈",
+    "aliases": ["trunc", "math.trunc"],
+    "tags": ["math"],
+    "description": "소수점 아래를 잘라 버리고 0에 가까운 쪽 정수로 만든다."
+  },
+  {
+    "id": "python.builtin.divmod",
+    "displayName": "divmod",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["divmod"],
+    "tags": ["math"],
+    "description": "두 수를 나눈 몫과 나머지를 함께 묶어 돌려준다."
+  },
+  {
+    "id": "python.builtin.ord",
+    "displayName": "ord",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["ord"],
+    "tags": ["char", "convert"],
+    "description": "글자 하나를 그에 대응하는 정수 코드 값으로 바꾼다."
+  },
+  {
+    "id": "python.builtin.chr",
+    "displayName": "chr",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["chr"],
+    "tags": ["char", "convert"],
+    "description": "정수 코드 값을 그에 대응하는 글자 하나로 바꾼다."
+  },
+  {
+    "id": "python.builtin.tuple",
+    "displayName": "tuple",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["tuple"],
+    "tags": ["container", "convert"],
+    "description": "여러 값을 한 번 정하면 바꿀 수 없는 묶음으로 만든다."
+  },
+  {
+    "id": "python.builtin.dict",
+    "displayName": "dict",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["dict"],
+    "tags": ["container", "convert", "map"],
+    "description": "키와 값의 쌍들을 모아 사전으로 만든다."
+  },
+  {
+    "id": "python.builtin.list",
+    "displayName": "list",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["list"],
+    "tags": ["container", "convert", "list"],
+    "description": "여러 항목을 순서가 있는 리스트로 모아 만든다."
+  },
+  {
+    "id": "python.itertools.permutations",
+    "displayName": "itertools.permutations",
+    "language": "Python",
+    "library": "itertools 모듈",
+    "aliases": ["permutations", "itertools.permutations"],
+    "tags": ["algorithm", "combination"],
+    "description": "여러 항목에서 순서를 따져 뽑은 모든 나열을 차례로 만들어 낸다."
+  },
+  {
+    "id": "python.itertools.combinations",
+    "displayName": "itertools.combinations",
+    "language": "Python",
+    "library": "itertools 모듈",
+    "aliases": ["combinations", "itertools.combinations"],
+    "tags": ["algorithm", "combination"],
+    "description": "여러 항목에서 순서를 따지지 않고 뽑은 모든 조합을 차례로 만들어 낸다."
+  },
+  {
+    "id": "python.itertools.product",
+    "displayName": "itertools.product",
+    "language": "Python",
+    "library": "itertools 모듈",
+    "aliases": ["product", "itertools.product"],
+    "tags": ["algorithm", "combination"],
+    "description": "여러 묶음에서 하나씩 골라 만들 수 있는 모든 짝을 차례로 만들어 낸다."
+  },
+  {
+    "id": "python.heapq.heapify",
+    "displayName": "heapq.heapify",
+    "language": "Python",
+    "library": "heapq 모듈",
+    "aliases": ["heapify", "heapq.heapify"],
+    "tags": ["container", "heap", "order"],
+    "description": "흩어진 값들을 가장 작은 값이 먼저 나오는 구조로 단번에 정리한다."
+  },
+  {
+    "id": "java.stack.size",
+    "displayName": "Stack.size",
+    "language": "Java",
+    "library": "java.util Stack",
+    "aliases": ["size", "Stack.size"],
+    "tags": ["container", "stack", "query"],
+    "description": "위로 쌓아 둔 항목이 모두 몇 개인지 알려준다."
+  },
+  {
+    "id": "java.stack.isEmpty",
+    "displayName": "Stack.isEmpty",
+    "language": "Java",
+    "library": "java.util Stack",
+    "aliases": ["isEmpty", "Stack.isEmpty"],
+    "tags": ["container", "stack", "query"],
+    "description": "위로 쌓은 항목이 하나도 없는지 살펴본다."
+  },
+  {
+    "id": "java.stack.peek",
+    "displayName": "Stack.peek",
+    "language": "Java",
+    "library": "java.util Stack",
+    "aliases": ["peek", "Stack.peek"],
+    "tags": ["container", "stack", "query"],
+    "description": "가장 위에 놓인 항목을 꺼내지 않고 살펴본다."
+  },
+  {
+    "id": "java.queue.size",
+    "displayName": "Queue.size",
+    "language": "Java",
+    "library": "java.util Queue",
+    "aliases": ["size", "Queue.size"],
+    "tags": ["container", "queue", "query"],
+    "description": "줄에 들어 있는 항목의 전체 수를 알려준다."
+  },
+  {
+    "id": "java.queue.isEmpty",
+    "displayName": "Queue.isEmpty",
+    "language": "Java",
+    "library": "java.util Queue",
+    "aliases": ["isEmpty", "Queue.isEmpty"],
+    "tags": ["container", "queue", "query"],
+    "description": "줄에 남은 항목이 전혀 없는지 살펴본다."
+  },
+  {
+    "id": "java.queue.peek",
+    "displayName": "Queue.peek",
+    "language": "Java",
+    "library": "java.util Queue",
+    "aliases": ["peek", "Queue.peek"],
+    "tags": ["container", "queue", "query"],
+    "description": "줄의 맨 앞 항목을 꺼내지 않고 살펴본다."
+  },
+  {
+    "id": "java.deque.size",
+    "displayName": "Deque.size",
+    "language": "Java",
+    "library": "java.util Deque",
+    "aliases": ["size", "Deque.size"],
+    "tags": ["container", "query"],
+    "description": "양끝이 열린 줄에 담긴 항목이 모두 몇 개인지 알려준다."
+  },
+  {
+    "id": "java.deque.isEmpty",
+    "displayName": "Deque.isEmpty",
+    "language": "Java",
+    "library": "java.util Deque",
+    "aliases": ["isEmpty", "Deque.isEmpty"],
+    "tags": ["container", "query"],
+    "description": "양끝이 열린 줄이 텅 비어 있는지 살펴본다."
+  },
+  {
+    "id": "java.deque.pollFirst",
+    "displayName": "Deque.pollFirst",
+    "language": "Java",
+    "library": "java.util Deque",
+    "aliases": ["pollFirst", "Deque.pollFirst"],
+    "tags": ["container", "remove"],
+    "description": "앞뒤가 트인 줄의 맨 앞 항목을 빼내어 돌려준다."
+  },
+  {
+    "id": "java.deque.pollLast",
+    "displayName": "Deque.pollLast",
+    "language": "Java",
+    "library": "java.util Deque",
+    "aliases": ["pollLast", "Deque.pollLast"],
+    "tags": ["container", "remove"],
+    "description": "앞뒤가 트인 줄의 맨 뒤 항목을 빼내어 돌려준다."
+  },
+  {
+    "id": "java.deque.peekFirst",
+    "displayName": "Deque.peekFirst",
+    "language": "Java",
+    "library": "java.util Deque",
+    "aliases": ["peekFirst", "Deque.peekFirst"],
+    "tags": ["container", "query"],
+    "description": "앞뒤가 트인 줄의 맨 앞 항목을 빼지 않고 살펴본다."
+  },
+  {
+    "id": "java.deque.peekLast",
+    "displayName": "Deque.peekLast",
+    "language": "Java",
+    "library": "java.util Deque",
+    "aliases": ["peekLast", "Deque.peekLast"],
+    "tags": ["container", "query"],
+    "description": "앞뒤가 트인 줄의 맨 뒤 항목을 빼지 않고 살펴본다."
+  },
+  {
+    "id": "java.deque.push",
+    "displayName": "Deque.push",
+    "language": "Java",
+    "library": "java.util Deque",
+    "aliases": ["push", "Deque.push"],
+    "tags": ["container", "add"],
+    "description": "앞뒤로 다룰 수 있는 줄의 맨 앞에 항목 하나를 얹어 넣는다."
+  },
+  {
+    "id": "java.deque.pop",
+    "displayName": "Deque.pop",
+    "language": "Java",
+    "library": "java.util Deque",
+    "aliases": ["pop", "Deque.pop"],
+    "tags": ["container", "remove"],
+    "description": "앞뒤로 다룰 수 있는 줄의 맨 앞 항목 하나를 걷어내 돌려준다."
+  },
+  {
+    "id": "java.arraylist.set",
+    "displayName": "ArrayList.set",
+    "language": "Java",
+    "library": "java.util ArrayList",
+    "aliases": ["set", "ArrayList.set"],
+    "tags": ["container", "list"],
+    "description": "리스트의 특정 위치 값을 새 값으로 바꿔 끼운다."
+  },
+  {
+    "id": "java.arraylist.contains",
+    "displayName": "ArrayList.contains",
+    "language": "Java",
+    "library": "java.util ArrayList",
+    "aliases": ["contains", "ArrayList.contains"],
+    "tags": ["container", "list", "search"],
+    "description": "리스트 안에 특정 값이 들어 있는지 확인한다."
+  },
+  {
+    "id": "java.arraylist.isEmpty",
+    "displayName": "ArrayList.isEmpty",
+    "language": "Java",
+    "library": "java.util ArrayList",
+    "aliases": ["isEmpty", "ArrayList.isEmpty"],
+    "tags": ["container", "list", "query"],
+    "description": "리스트에 담긴 요소가 전혀 없는지 살펴본다."
+  },
+  {
+    "id": "java.arraylist.addAll",
+    "displayName": "ArrayList.addAll",
+    "language": "Java",
+    "library": "java.util ArrayList",
+    "aliases": ["addAll", "ArrayList.addAll"],
+    "tags": ["container", "list", "add"],
+    "description": "다른 묶음의 요소들을 리스트 끝에 한꺼번에 더해 넣는다."
+  },
+  {
+    "id": "java.arraylist.toArray",
+    "displayName": "ArrayList.toArray",
+    "language": "Java",
+    "library": "java.util ArrayList",
+    "aliases": ["toArray", "ArrayList.toArray"],
+    "tags": ["container", "list", "convert"],
+    "description": "리스트의 요소들을 고정 크기 배열 형태로 옮겨 담는다."
+  },
+  {
+    "id": "java.hashmap.putIfAbsent",
+    "displayName": "HashMap.putIfAbsent",
+    "language": "Java",
+    "library": "java.util HashMap",
+    "aliases": ["putIfAbsent", "HashMap.putIfAbsent"],
+    "tags": ["container", "map", "add"],
+    "description": "키가 아직 없을 때만 값을 새로 넣고, 이미 있으면 넣지 않고 그대로 둔다."
+  },
+  {
+    "id": "java.hashmap.containsValue",
+    "displayName": "HashMap.containsValue",
+    "language": "Java",
+    "library": "java.util HashMap",
+    "aliases": ["containsValue", "HashMap.containsValue"],
+    "tags": ["container", "map", "search"],
+    "description": "사전 안에 특정 값이 담겨 있는지 확인한다."
+  },
+  {
+    "id": "java.hashmap.isEmpty",
+    "displayName": "HashMap.isEmpty",
+    "language": "Java",
+    "library": "java.util HashMap",
+    "aliases": ["isEmpty", "HashMap.isEmpty"],
+    "tags": ["container", "map", "query"],
+    "description": "사전에 저장된 쌍이 하나도 없는지 살펴본다."
+  },
+  {
+    "id": "java.hashset.size",
+    "displayName": "HashSet.size",
+    "language": "Java",
+    "library": "java.util HashSet",
+    "aliases": ["size", "HashSet.size"],
+    "tags": ["container", "set", "query"],
+    "description": "중복 없는 모음에 담긴 항목이 몇 개인지 알려준다."
+  },
+  {
+    "id": "java.hashset.isEmpty",
+    "displayName": "HashSet.isEmpty",
+    "language": "Java",
+    "library": "java.util HashSet",
+    "aliases": ["isEmpty", "HashSet.isEmpty"],
+    "tags": ["container", "set", "query"],
+    "description": "중복 없는 모음이 텅 비었는지 살펴본다."
+  },
+  {
+    "id": "java.hashset.clear",
+    "displayName": "HashSet.clear",
+    "language": "Java",
+    "library": "java.util HashSet",
+    "aliases": ["clear", "HashSet.clear"],
+    "tags": ["container", "set"],
+    "description": "중복 없는 모음의 항목을 모두 비워 없앤다."
+  },
+  {
+    "id": "java.hashset.addAll",
+    "displayName": "HashSet.addAll",
+    "language": "Java",
+    "library": "java.util HashSet",
+    "aliases": ["addAll", "HashSet.addAll"],
+    "tags": ["container", "set", "add"],
+    "description": "다른 묶음의 항목들을 중복 없는 모음에 한꺼번에 합쳐 넣는다."
+  },
+  {
+    "id": "java.string.equals",
+    "displayName": "String.equals",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["equals", "String.equals"],
+    "tags": ["string", "query"],
+    "description": "두 문자열의 내용이 똑같은지 견주어 참인지 거짓인지 가린다."
+  },
+  {
+    "id": "java.string.equalsIgnoreCase",
+    "displayName": "String.equalsIgnoreCase",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["equalsIgnoreCase", "String.equalsIgnoreCase"],
+    "tags": ["string", "query"],
+    "description": "두 문자열을 대문자 소문자 구분 없이 같은지 견주어 가린다."
+  },
+  {
+    "id": "java.string.isEmpty",
+    "displayName": "String.isEmpty",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["isEmpty", "String.isEmpty"],
+    "tags": ["string", "query"],
+    "description": "문자열에 글자가 전혀 없는지 살펴본다."
+  },
+  {
+    "id": "java.string.toCharArray",
+    "displayName": "String.toCharArray",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["toCharArray", "String.toCharArray"],
+    "tags": ["string", "convert"],
+    "description": "문자열을 글자 하나하나가 든 배열로 풀어 놓는다."
+  },
+  {
+    "id": "java.string.chars",
+    "displayName": "String.chars",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["chars", "String.chars"],
+    "tags": ["string", "convert"],
+    "description": "문자열의 각 글자를 정수 코드들의 흐름으로 펼쳐 내보낸다."
+  },
+  {
+    "id": "java.string.repeat",
+    "displayName": "String.repeat",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["repeat", "String.repeat"],
+    "tags": ["string"],
+    "description": "문자열을 지정한 횟수만큼 반복해 이어 붙인 새 문자열을 만든다."
+  },
+  {
+    "id": "java.string.strip",
+    "displayName": "String.strip",
+    "language": "Java",
+    "library": "java.lang String",
+    "aliases": ["strip", "String.strip"],
+    "tags": ["string"],
+    "description": "문자열 양쪽 끝의 넓은 범위 공백 문자까지 떼어 낸다."
+  },
+  {
+    "id": "java.stringbuilder.insert",
+    "displayName": "StringBuilder.insert",
+    "language": "Java",
+    "library": "java.lang StringBuilder",
+    "aliases": ["insert", "StringBuilder.insert"],
+    "tags": ["string", "add"],
+    "description": "만들고 있는 문자열의 지정한 위치에 글자 묶음을 끼워 넣는다."
+  },
+  {
+    "id": "java.stringbuilder.length",
+    "displayName": "StringBuilder.length",
+    "language": "Java",
+    "library": "java.lang StringBuilder",
+    "aliases": ["length", "StringBuilder.length"],
+    "tags": ["string", "query"],
+    "description": "만들고 있는 문자열에 쌓인 글자가 몇 개인지 알려준다."
+  },
+  {
+    "id": "java.stringbuilder.deleteCharAt",
+    "displayName": "StringBuilder.deleteCharAt",
+    "language": "Java",
+    "library": "java.lang StringBuilder",
+    "aliases": ["deleteCharAt", "StringBuilder.deleteCharAt"],
+    "tags": ["string", "remove"],
+    "description": "만들고 있는 문자열에서 지정한 위치의 글자 하나를 지운다."
+  },
+  {
+    "id": "java.stringbuilder.charAt",
+    "displayName": "StringBuilder.charAt",
+    "language": "Java",
+    "library": "java.lang StringBuilder",
+    "aliases": ["charAt", "StringBuilder.charAt"],
+    "tags": ["string", "query"],
+    "description": "만들고 있는 문자열에서 지정한 위치의 글자 하나를 꺼내 본다."
+  },
+  {
+    "id": "java.integer.toString",
+    "displayName": "Integer.toString",
+    "language": "Java",
+    "library": "java.lang Integer",
+    "aliases": ["toString", "Integer.toString"],
+    "tags": ["convert", "number"],
+    "description": "정수를 사람이 읽는 글자열 형태로 바꾼다."
+  },
+  {
+    "id": "java.integer.compare",
+    "displayName": "Integer.compare",
+    "language": "Java",
+    "library": "java.lang Integer",
+    "aliases": ["compare", "Integer.compare"],
+    "tags": ["number", "query"],
+    "description": "두 정수의 크기를 견주어 어느 쪽이 큰지 작은지 같은지를 수로 알려준다."
+  },
+  {
+    "id": "java.math.floorMod",
+    "displayName": "Math.floorMod",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["floorMod", "Math.floorMod"],
+    "tags": ["math"],
+    "description": "나눗셈의 나머지를 늘 나누는 수의 부호에 맞춰 돌려준다."
+  },
+  {
+    "id": "java.math.floorDiv",
+    "displayName": "Math.floorDiv",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["floorDiv", "Math.floorDiv"],
+    "tags": ["math"],
+    "description": "나눗셈의 몫을 더 작은 쪽 정수로 내림해 돌려준다."
+  },
+  {
+    "id": "java.math.signum",
+    "displayName": "Math.signum",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["signum", "Math.signum"],
+    "tags": ["math"],
+    "description": "수가 양수인지 음수인지 0인지를 부호 값으로 알려준다."
+  },
+  {
+    "id": "java.math.cbrt",
+    "displayName": "Math.cbrt",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["cbrt", "Math.cbrt"],
+    "tags": ["math"],
+    "description": "어떤 수의 세제곱근 값을 구한다."
+  },
+  {
+    "id": "java.math.toRadians",
+    "displayName": "Math.toRadians",
+    "language": "Java",
+    "library": "java.lang Math",
+    "aliases": ["toRadians", "Math.toRadians"],
+    "tags": ["math"],
+    "description": "각도 단위로 나타낸 값을 호도 단위로 바꿔 준다."
+  },
+  {
+    "id": "python.builtin.range",
+    "displayName": "range",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["range"],
+    "tags": ["number"],
+    "description": "시작 값부터 끝 값 직전까지 일정 간격의 정수 수열을 만든다."
+  },
+  {
+    "id": "python.builtin.enumerate",
+    "displayName": "enumerate",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["enumerate"],
+    "tags": ["container"],
+    "description": "각 원소에 0부터의 순번을 붙여 짝지어 내놓는다."
+  },
+  {
+    "id": "python.builtin.zip",
+    "displayName": "zip",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["zip"],
+    "tags": ["container"],
+    "description": "여러 수열을 같은 위치끼리 짝지어 묶는다."
+  },
+  {
+    "id": "python.builtin.reversed",
+    "displayName": "reversed",
+    "language": "Python",
+    "library": "내장 함수",
+    "aliases": ["reversed"],
+    "tags": ["order"],
+    "description": "원소 순서를 뒤집은 역방향 순회를 돌려준다."
+  },
+  {
+    "id": "java.stream.count",
+    "displayName": "Stream.count",
+    "language": "Java",
+    "library": "java.util.stream",
+    "aliases": ["count", "Stream.count"],
+    "tags": ["stream", "query"],
+    "description": "흐름에 남아 있는 원소가 모두 몇 개인지 세어 돌려준다."
+  },
+  {
+    "id": "java.stream.max",
+    "displayName": "Stream.max",
+    "language": "Java",
+    "library": "java.util.stream",
+    "aliases": ["max", "Stream.max"],
+    "tags": ["stream", "query"],
+    "description": "흐름의 원소 가운데 비교 기준으로 가장 큰 하나를 찾아 돌려준다."
+  },
+  {
+    "id": "java.stream.min",
+    "displayName": "Stream.min",
+    "language": "Java",
+    "library": "java.util.stream",
+    "aliases": ["min", "Stream.min"],
+    "tags": ["stream", "query"],
+    "description": "흐름의 원소 가운데 비교 기준으로 가장 작은 하나를 찾아 돌려준다."
+  }
+]

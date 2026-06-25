@@ -1,0 +1,16 @@
+# 로컬에서 백엔드를 한 번에 기동. (프론트는 정적 파일이라 별도 정적 서버로 띄운다)
+#   docker compose up --build
+# 그 뒤 프론트: cd frontend && py -3.13 -m http.server 5173
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env   # COMANTLE_SALT 등 고정값을 한 곳(.env)에서 읽는다
+    environment:
+      # 프론트 출처 허용 목록 (로컬 개발 + 추후 배포 도메인을 콤마로)
+      COMANTLE_ALLOWED_ORIGINS: "http://localhost:5173,http://127.0.0.1:5173"
+      # 개발 전용: ?date=YYYY-MM-DD 날짜 덮어쓰기 허용 (운영에선 비움)
+      COMANTLE_DEV: "1"
+    # data/ 는 이미지에 포함. 점수표 갱신 시 backend/data 동기화 후 재빌드(sync_data.py 참고).
