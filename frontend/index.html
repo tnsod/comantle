@@ -9,6 +9,7 @@
 <body>
   <main class="wrap">
     <header class="site-head">
+      <button id="helpBtn" class="help-btn" type="button" aria-label="게임 방법 보기" title="게임 방법">? 게임 방법</button>
       <div class="brand">
         <span class="logo-dot" aria-hidden="true"></span>
         <h1>코맨틀</h1>
@@ -55,6 +56,15 @@
       <p class="note">등록된 함수만 추측할 수 있어요. 이름을 입력하고 Enter를 누르세요. 같은 이름이 여러 개면 후보에서 고르면 됩니다.</p>
     </footer>
   </main>
+
+  <!-- 게임 방법 도움말 모달 (첫 방문 시 자동 표시 / 헤더 버튼으로 재오픈) -->
+  <div id="helpModal" class="modal-overlay help-overlay hidden">
+    <div class="help-box" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+      <button id="helpClose" class="help-close" type="button" aria-label="닫기">×</button>
+      <h2 id="helpTitle" class="help-title">게임 방법</h2>
+      <div id="helpBody" class="help-body"></div>
+    </div>
+  </div>
 
   <!-- 확인용 중앙 모달 (힌트 / 포기 공용) -->
   <div id="modal" class="modal-overlay hidden">

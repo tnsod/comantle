@@ -79,12 +79,22 @@
 
   // ---- 유사도 순위: 서버가 추측마다 'rank 숫자 하나'를 내려준다(진행 중에도 노출).
   // 클라는 점수표 전체를 모른다 — 순위 계산을 클라가 하지 않는다(§0 유지).
+  // 서버 컷오프와 일치하는 상한. UI 라벨/바가 이 값을 전제로 동작하며(예: "100위권 밖",
+  // 바 길이 101-rank), 이 상한 밖의 rank 는 '순위권 밖'으로 본다.
+  const RANK_CUTOFF = 100;
+
+  // 추측이 '실제 순위(1~컷오프)'를 가졌는지. null·undefined·컷오프 밖(>100)은 모두 false.
+  // (>100 방어: 컷오프 적용 전 저장된 localStorage 기록이나, 컷오프 미적용 서버 응답 대비.)
+  function isRanked(attempt) {
+    const r = attempt.rank;
+    return typeof r === "number" && r >= 1 && r <= RANK_CUTOFF;
+  }
+
   function rankLabel(attempt) {
     if (state.answerId && attempt.id === state.answerId) return "정답";
-    const r = attempt.rank;
-    if (r === null) return "순위권 밖";        // 컷오프 적용 시(현재 서버는 항상 숫자를 줌)
-    if (r === undefined) return "—";          // 순위 정보가 없는 경우(이전 버전 기록 등)
-    return `${r}위`;
+    if (attempt.rank === undefined) return "—"; // 순위 정보 자체가 없는 경우(아주 옛 기록)
+    if (isRanked(attempt)) return `${attempt.rank}위`;
+    return "100위권 밖";                          // null 또는 컷오프 밖(>100)
   }
 
   // ---- localStorage (진행 기록만 — 점수표 전체·정답 id 저장 금지) ----
@@ -127,10 +137,21 @@
   const ESC = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" };
   function esc(s) { return String(s).replace(/[&<>"']/g, (c) => ESC[c]); }
 
-  // ---- 점수 막대 색상 ----
-  function scoreColor(score) {
-    const hue = Math.round((score / 100) * 120); // 0=빨강 ~ 120=초록
-    return `hsl(${hue}, 70%, 50%)`;
+  // ---- 그래프 바 (순위 기반) ----
+  // 점수가 아니라 '순위'로 바를 채운다 — 화면을 순위 한 가지로 일관되게.
+  //   · 정답 행            : 꽉 참(100%, .correct 스타일).
+  //   · 100위 안(rank 1~100): (101 - rank)% → 1위=100%, 100위=1%. 순위가 높을수록 차오름.
+  //   · 100위권 밖(rank null) / 순위 정보 없음 : 바 없음(빈 트랙).
+  // 색은 CSS 그라데이션(.c-bar > i, !important)이 정하므로 인라인 색은 넣지 않는다.
+  function barHtml(attempt) {
+    if (state.answerId && attempt.id === state.answerId) {
+      return `<span class="c-bar"><i style="width:100%"></i></span>`;
+    }
+    if (isRanked(attempt)) {
+      const w = Math.max(0, Math.min(100, 101 - attempt.rank));
+      return `<span class="c-bar"><i style="width:${w}%"></i></span>`;
+    }
+    return `<span class="c-bar"></span>`; // 100위권 밖/순위 없음: 바 비움
   }
 
   // ---- 동명이의 후보 선택 UI (언어 배지만) ----
@@ -224,7 +245,6 @@
   // ---- 결과 렌더 ----
   function rowHtml(attempt, classes) {
     const fn = byId[attempt.id];
-    const color = scoreColor(attempt.score);
     const cls = ["row"].concat(classes || []);
     if (state.answerId && attempt.id === state.answerId) cls.push("correct");
     return (
@@ -233,7 +253,7 @@
       `<span class="c-word">${esc(fn.displayName)} <span class="c-lang">${esc(fn.language)}</span></span>` +
       `<span class="c-score">${attempt.score.toFixed(1)}</span>` +
       `<span class="c-srank">${rankLabel(attempt)}</span>` +
-      `<span class="c-bar"><i style="width:${attempt.score}%;background:${color}"></i></span>` +
+      barHtml(attempt) +
       `</div>`
     );
   }
@@ -382,6 +402,63 @@
   function closeModal() {
     $("modal").classList.add("hidden");
     modalYesHandler = null;
+  }
+
+  // ---- 게임 방법 도움말 모달 ----
+  // 첫 방문 시 1회 자동 표시(localStorage 플래그). 이후엔 헤더 버튼으로만 연다.
+  const HELP_SEEN_KEY = "comantle:helpSeen";
+
+  // 본문은 정적 텍스트지만 기존 esc() 규칙과 동일하게 안전 삽입(일관성 유지).
+  const HELP_QA = [
+    ["코맨틀은 무엇인가요?",
+     "코맨틀은 오늘의 함수를 맞히는 게임입니다. 함수 이름을 입력하면, 그 함수가 정답 함수와 기능적으로 얼마나 가까운지 유사도 점수로 알려줍니다. 점수가 높은 함수들을 단서로 삼아 정답에 다가가 보세요. 대상 언어는 C++, Python, Java입니다."],
+    ["어떤 함수가 정답이 되나요?",
+     "C++·Python·Java에서 자주 쓰이는 함수, 메서드, 표준 라이브러리 함수가 정답 후보입니다. 입출력, 자료구조, 정렬·탐색, 문자열, 수학 등 코딩 테스트와 전공 수업에서 흔히 만나는 함수들로 이루어져 있습니다. 정답은 매일 하나씩 정해집니다."],
+    ["유사도는 무엇인가요?",
+     "코맨틀의 유사도는 함수 이름의 철자가 아니라 하는 일(기능)이 얼마나 비슷한지를 0에서 100까지로 나타낸 점수입니다. 숫자가 클수록 정답 함수와 기능적으로 가깝다는 뜻입니다. 예를 들어 정답이 printf라면, 같은 \"출력\" 기능을 하는 cout이나 System.out.println이 높은 점수를 받습니다. 이름이 전혀 달라도요."],
+    ["왜 세 가지 언어를 같이 다루나요?",
+     "같은 기능을 하는 함수가 언어마다 다르게 생겼기 때문입니다. 리스트 끝에 원소를 추가하는 일은 C++에서 push_back, Python에서 append, Java에서 add인데, 코맨틀에서는 이 셋이 서로 높은 유사도를 갖습니다. 정답을 좁히다 보면 여러 언어에서 같은 일을 하는 함수들이 자연스럽게 묶여 보입니다. 그게 이 게임의 학습 포인트입니다."],
+    ["반대 기능인데 점수가 높게 나와요. 왜죠?",
+     "유사도는 \"같은 맥락에서 쓰이는가\"를 봅니다. 그래서 하는 일이 정반대인 함수도 점수가 높게 나올 수 있습니다. 예를 들어 push_back(추가)과 pop_back(제거)은 하는 일은 반대지만 둘 다 같은 자료구조의 끝을 다루는 함수라, 가까운 점수가 나옵니다. 점수가 높다고 곧 정답 방향인 건 아니니, 여러 함수를 넣어보며 어느 쪽인지 가늠해 보세요."],
+    ["입력은 어떻게 하나요?",
+     "등록된 함수만 추측할 수 있습니다. 함수 이름을 입력하고 Enter를 누르세요. std::vector::push_back처럼 길게 쓰지 않고 push_back만 입력해도 인식됩니다. 같은 이름의 함수가 여러 언어에 있으면(예: find, size), 후보가 나타나 그중에서 고르면 됩니다. 등록되지 않은 함수는 시도에 포함되지 않습니다."],
+    ["힌트는 어떻게 쓰나요?",
+     "막혔을 때 힌트 버튼으로 정답에 대한 단서를 얻을 수 있습니다. 힌트 1은 정답 함수가 어떤 언어인지(C++·Python·Java 중), 힌트 2는 정답 함수가 속한 라이브러리나 모듈, 클래스를 알려줍니다(없는 경우 \"라이브러리 없음\"). 정답 함수의 범위를 좁히는 데 도움이 되지만, 정답을 직접 알려주지는 않습니다."],
+    ["포기하면 어떻게 되나요?",
+     "포기 버튼을 누르면 정답 함수가 공개됩니다. 도저히 모르겠을 때 정답과 해설을 확인하는 용도입니다. 정답을 공개한 뒤에도 다른 함수를 계속 입력해 유사도를 확인할 수 있고, 정답과 가까운 함수 목록도 함께 볼 수 있습니다."],
+    ["유사도 순위는 무엇인가요?",
+     "정답 함수와 가까운 순서로 매긴 등수입니다. 추측한 함수가 상위 100위 안에 들면 몇 위인지 보여주고, 그보다 멀면 \"100위권 밖\"으로 표시됩니다. 순위가 높을수록(숫자가 작을수록) 정답에 가깝다는 뜻입니다."],
+    ["정답을 맞힌 뒤에도 더 해볼 수 있나요?",
+     "네. 정답을 맞히거나 포기한 뒤에도 다른 함수를 계속 입력해 유사도를 확인할 수 있습니다. 정답과 가장 가까운 함수 목록도 함께 제공되니, 어떤 함수들이 기능적으로 가까운지 살펴보며 다음 판의 감을 키워 보세요."],
+    ["정답은 언제 바뀌나요?",
+     "정답은 한국 표준시(KST) 기준 매일 자정에 바뀝니다. 모두가 같은 날 같은 정답을 풉니다."],
+  ];
+
+  function renderHelp() {
+    const box = $("helpBody");
+    if (!box || box.dataset.filled === "1") return; // 정적이므로 1회만 구축
+    box.innerHTML = HELP_QA.map(
+      ([q, a]) =>
+        `<div class="help-qa"><p class="help-q">${esc(q)}</p>` +
+        `<p class="help-a">${esc(a)}</p></div>`
+    ).join("");
+    box.dataset.filled = "1";
+  }
+
+  function openHelp() {
+    renderHelp();
+    $("helpModal").classList.remove("hidden");
+    const close = $("helpClose");
+    if (close) close.focus();
+  }
+
+  function closeHelp() {
+    $("helpModal").classList.add("hidden");
+    try { localStorage.setItem(HELP_SEEN_KEY, "1"); } catch (_) {}
+  }
+
+  function helpSeen() {
+    try { return localStorage.getItem(HELP_SEEN_KEY) === "1"; } catch (_) { return false; }
   }
 
   function refreshEndUI() {
@@ -606,6 +683,16 @@
       if (e.key === "Escape" && !$("modal").classList.contains("hidden")) closeModal();
     });
 
+    // 게임 방법 도움말: 버튼 열기 / X·바깥클릭·Esc 닫기
+    $("helpBtn").addEventListener("click", openHelp);
+    $("helpClose").addEventListener("click", closeHelp);
+    $("helpModal").addEventListener("click", (e) => {
+      if (e.target === $("helpModal")) closeHelp();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !$("helpModal").classList.contains("hidden")) closeHelp();
+    });
+
     // ╔══ 개발 모드 전용 블록 — 출시 시 이 블록만 제거하면 됨 ════════════════════╗
     // 새 게임: 가짜(임의) 날짜를 굴려 서버가 다른 정답을 뽑게 한다. 정답 id 를 직접 지정하지
     // 않는다(노출 금지) — 날짜만 바꾼다. 서버 DEV_MODE 가 꺼져 있으면 서버가 날짜를 무시하므로
@@ -622,6 +709,9 @@
 
     // 개발 모드가 아니면 '새 게임' 버튼 숨김 (운영 UI 에서 제거)
     if (!state.devMode) $("newGameBtn").classList.add("hidden");
+
+    // 첫 방문이면 도움말을 한 번 자동 표시(이후엔 helpSeen 플래그로 미표시).
+    if (!helpSeen()) openHelp();
 
     input.focus();
   }

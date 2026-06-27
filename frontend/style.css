@@ -62,7 +62,24 @@ body {
 }
 
 /* ---- 헤더 ---- */
-.site-head { margin-bottom: 26px; }
+.site-head { position: relative; margin-bottom: 26px; }
+
+/* 게임 방법 버튼 — 헤더 우상단, 기존 hint-btn 토큰 재사용 */
+.help-btn {
+  position: absolute; top: 0; right: 0;
+  padding: 8px 14px;
+  font-size: 0.84rem;
+  font-family: inherit;
+  font-weight: 700;
+  color: var(--ink-soft);
+  background: var(--paper);
+  border: 1.5px solid var(--line);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color .15s, background .15s, color .15s, transform .05s;
+}
+.help-btn:hover { color: var(--orange-d); border-color: var(--orange); background: var(--peach-bg); }
+.help-btn:active { transform: translateY(1px); }
 .brand { display: flex; align-items: center; gap: 12px; }
 .logo-dot {
   width: 22px; height: 22px; border-radius: 50%;
@@ -265,6 +282,43 @@ header h1 {
 .modal-btn.yes:hover { border-color: var(--orange); }
 .modal-btn.no { color: var(--ink-soft); }
 .modal-btn.no:hover { background: var(--cream); border-color: var(--muted); }
+
+/* ---- 게임 방법 도움말 모달 (modal-overlay 음영 재사용) ---- */
+.help-overlay { align-items: flex-start; overflow-y: auto; padding: 40px 20px; }
+.help-box {
+  position: relative;
+  width: 100%; max-width: 520px;
+  margin: auto;
+  padding: 30px 30px 26px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 24px 60px rgba(20, 28, 45, 0.28), 0 2px 8px rgba(20, 28, 45, 0.06);
+}
+.help-close {
+  position: absolute; top: 16px; right: 16px;
+  width: 34px; height: 34px; padding: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 1.3rem; line-height: 1;
+  color: var(--muted);
+  background: transparent;
+  border: 1.5px solid var(--line);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color .15s, border-color .15s, background .15s;
+}
+.help-close:hover { color: var(--orange-d); border-color: var(--orange); background: var(--peach-bg); }
+.help-title { margin: 0 0 18px; font-size: 1.5rem; font-weight: 800; letter-spacing: -0.3px; }
+.help-body .help-qa { margin: 0 0 16px; }
+.help-body .help-qa:last-child { margin-bottom: 0; }
+.help-body .help-q {
+  margin: 0 0 5px;
+  font-size: 1rem; font-weight: 800; color: var(--orange-d);
+}
+.help-body .help-a {
+  margin: 0;
+  font-size: 0.94rem; color: var(--ink-soft); line-height: 1.65;
+}
 
 .hint-box {
   margin-top: 14px;

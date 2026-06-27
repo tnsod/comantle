@@ -54,17 +54,17 @@ def _env_positive_int(name: str):
     return n if n > 0 else None
 
 
-# ---- 진행 중 순위 노출 컷오프 (지금은 무제한) ------------------------------
-# 나중에 "상위 N위만, 그 밖은 순위권 밖"으로 바꿀 단일 지점. 지금은 None = 무제한이라
-# 항상 실제 순위가 나간다. N을 정하면 이 상수(또는 COMANTLE_RANK_CUTOFF) 한 줄만 바꾼다.
-RANK_CUTOFF = _env_positive_int("COMANTLE_RANK_CUTOFF")  # None/0 = 무제한
+# ---- 진행 중 순위 노출 컷오프 (상위 100위까지만) ----------------------------
+# "상위 N위만 실제 순위, 그 밖은 순위권 밖(rank=None)"으로 가리는 단일 지점.
+# 기본 100. 환경변수 COMANTLE_RANK_CUTOFF 로 덮어쓸 수 있다(양의 정수만 인정).
+RANK_CUTOFF = _env_positive_int("COMANTLE_RANK_CUTOFF") or 100  # 기본 100위 컷오프
 
 
 def _apply_rank_cutoff(rank):
     """rank 를 반환하기 직전의 유일한 컷오프 적용 지점.
 
     컷오프가 설정돼 있고 rank 가 그보다 크면 None('순위권 밖')으로 가린다.
-    지금은 RANK_CUTOFF 가 None 이라 항상 실제 순위를 그대로 통과시킨다.
+    RANK_CUTOFF=100 이라 101위 이하는 rank=None 으로 나간다.
     """
     if rank is None:
         return None
