@@ -2,7 +2,7 @@
 
 ![](2026-06-27-22-08-42.png)
 
-C++ · Python · Java 함수를 **기능적 유사도**로 맞히는 추론 게임. [Semantle](https://semantle.com/)·[꼬맨틀](https://semantle-ko.newsjel.place/)의 프로그래밍 함수 버전입니다.
+C++ · Python · Java 함수를 **기능적 유사도**로 맞히는 추론 게임. [Semantle](https://semantle.com/)·[꼬맨틀](https://semantle-ko.newsjel.ly/)의 프로그래밍 함수 버전입니다.
 
 오늘의 정답 함수가 하나 정해지고, 함수 이름을 입력하면 그 함수가 정답과 **기능적으로 얼마나 가까운지** 0~100 점수로 알려줍니다. 점수가 높은 함수를 단서 삼아 정답을 좁혀 갑니다. 이름의 철자가 아니라 *하는 일*로 가까움을 잰다는 점이 핵심입니다 — 예를 들어 정답이 `printf`라면, 같은 "출력" 기능을 하는 `cout`·`System.out.println`이 높은 점수를 받습니다.
 
