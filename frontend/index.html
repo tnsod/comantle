@@ -77,9 +77,12 @@
     </div>
   </div>
 
-  <!-- A안: 점수·정답은 서버가 쥔다. data.js 제거. 점수표를 클라에 내려보내지 않는다. -->
-  <!-- 백엔드 주소. 같은 출처로 서빙하면 ""(빈 문자열)로 두면 된다. -->
-  <script>window.COMANTLE_API_BASE = "http://127.0.0.1:8000";</script>
+  <script>
+  window.COMANTLE_API_BASE =
+    location.hostname === "localhost" || location.hostname === "127.0.0.1"
+      ? ""
+      : "https://comantle.onrender.com";
+  </script>
   <script src="app.js"></script>
 </body>
 </html>
