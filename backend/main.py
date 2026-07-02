@@ -189,6 +189,6 @@ def hint(body: HintBody):
     return {"date": date_str, **game.hint(answer_id, body.level)}
 
 
-@app.get("/api/health")
+@app.api_route("/api/health", methods=["GET", "HEAD"])
 def health():
     return {"status": "ok", "functions": len(game.functions), "dev": DEV_MODE}
